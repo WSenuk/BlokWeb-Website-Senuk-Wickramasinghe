@@ -36,7 +36,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
- https://awge.com/home of https://www.reformcollective.com/
+  https://www.vanschaikzeist.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Van Schaik Zeist -Home
