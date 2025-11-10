@@ -39,12 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  https://awge.com/home of https://www.reformcollective.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/ikeahome.png" width="375px" alt="Welkom pagina van Ikea. Product Website">
+  Van Schaik Zeist -Home
   <img src="readme-images/vanschaikhome.png" width="375px" alt="Welkom pagina van VanSchaik Zeist, werkplek website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Van Schaik Zeist - Projecten
   <img src="readme-images/ikeaproduct.png" width="375px" alt="Ikea product pagina">
   <img src="readme-images/vanschaikprojecten.png" width="375px" alt="Projecten Pagina">
  
