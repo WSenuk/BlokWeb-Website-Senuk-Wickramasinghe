@@ -41,12 +41,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
   <img src="readme-images/ikeahome.png" width="375px" alt="Welkom pagina van Ikea. Product Website">
-  <img src="readme-images/reformcollectivehome.png" width="375px" alt="Welkom pagina van reform collective. Digital Agency Website">
+  <img src="readme-images/vanschaikhome.png" width="375px" alt="Welkom pagina van VanSchaik Zeist, werkplek website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
   <img src="readme-images/ikeaproduct.png" width="375px" alt="Ikea product pagina">
-  <img src="readme-images/reformcollectiveproduct.png" width="375px" alt="Reformcollective product display pagina">
+  <img src="readme-images/vanschaikprojecten.png" width="375px" alt="Projecten Pagina">
  
 </details>
 
