@@ -44,7 +44,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Van Schaik Zeist - Projecten
-  <img src="readme-images/ikeaproduct.png" width="375px" alt="Ikea product pagina">
   <img src="readme-images/vanschaikprojecten.png" width="375px" alt="Projecten Pagina">
  
 </details>
