@@ -54,9 +54,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
-  ## Screenreader-Test
+  ### Screenreader-Test:
   Nadat ik de toegankelijkheid op mijn apparaat had ingeschakeld, ging ik naar de website om te controleren hoe goed de schermlezer daarop presteerde. De bovenkant van de website deed het goed, maar toen ik naar beneden scrolde, begonnen er fouten te verschijnen. Ik      drukte op Tab om verder te gaan, maar toen ontdekte ik dat er een paar verborgen punten waren die de verteller opmerkte. Ik drukte op Capslock + F7 om het aantal links te bekijken en op dezelfde Tab zag ik dat ik de koppen kon zien. De docent stelde voor dat ik een     extensie zou installeren zodat ik de koppen in de juiste volgorde kon zien.
-  ### Bevindingen
+  ### Bevindingen:
   <img src="readme-images/screenreadertest1.png" width="375px" alt="Verborgen items">
   Er waren verborgen items die de schermlezer oppikte.
   <img src="readme-images/screenreadertest2.png" width="375px" alt="Verborgen items">
