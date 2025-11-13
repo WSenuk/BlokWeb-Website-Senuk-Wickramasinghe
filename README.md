@@ -56,7 +56,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
   ### Screenreader Test
   Nadat ik de toegankelijkheid op mijn apparaat had ingeschakeld, ging ik naar de website om te controleren hoe goed de schermlezer daarop presteerde. De bovenkant van de website deed het goed, maar toen ik naar beneden scrolde, begonnen er fouten te verschijnen. Ik      drukte op Tab om verder te gaan, maar toen ontdekte ik dat er een paar verborgen punten waren die de verteller opmerkte. Ik drukte op Capslock + F7 om het aantal links te bekijken en op dezelfde Tab zag ik dat ik de koppen kon zien. De docent stelde voor dat ik een     extensie zou installeren zodat ik de koppen in de juiste volgorde kon zien.
+  
   ### Bevindingen
+  
   ### WCAG Checklist
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
