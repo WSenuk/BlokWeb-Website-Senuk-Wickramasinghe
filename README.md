@@ -41,10 +41,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   #### Van Schaik Zeist -Home
   <img src="readme-images/figihome.png" width="375px" alt="Welkom pagina van Figt, Theater Zeist">
+  ##### Welkom pagina van Figt, Theater Zeist
 
   #### Screenshot(s) van de tweede pagina (small screen):
   #### Van Schaik Zeist - Projecten
   <img src="readme-images/overfigi.png" width="375px" alt="Over Ons Pagina">
+  ##### Over Ons Pagina
  
 </details>
 
