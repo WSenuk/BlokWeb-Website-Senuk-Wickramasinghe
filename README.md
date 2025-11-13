@@ -54,6 +54,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  <strong>Screenreader Test</strong>
+  <strong>WCAG Checklist</strong>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
@@ -83,7 +85,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Voortgang 1 (week 2)
-Does this work?
 <details>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
