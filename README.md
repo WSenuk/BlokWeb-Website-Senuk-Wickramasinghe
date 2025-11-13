@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   [https://www.vanschaikzeist.nl/](https://www.figi.nl/)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Van Schaik Zeist -Home
+  #### Van Schaik Zeist -Home
   <img src="readme-images/figihome.png" width="375px" alt="Welkom pagina van Figt, Theater Zeist">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Van Schaik Zeist - Projecten
+  #### Van Schaik Zeist - Projecten
   <img src="readme-images/overfigi.png" width="375px" alt="Over Ons Pagina">
  
 </details>
@@ -55,19 +55,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
   ### Screenreader
-
   Nadat ik de toegankelijkheid op mijn apparaat had ingeschakeld, heb ik de website bezocht om te controleren hoe goed de schermlezer daarop presteerde. De bovenkant van de website deed het goed, maar toen ik verder naar beneden scrolde, begonnen er fouten te verschijnen.
-
-  Met **Tab** probeerde ik verder te navigeren, maar ik merkte dat de screenreader verborgen elementen oppikte.  
-  Met **Capslock + F7** kon ik alle links bekijken, en op dezelfde manier zag ik ook de headings. De docent stelde voor een extensie te installeren om de heading-structuur beter te kunnen zien.
+  Met Tab probeerde ik verder te navigeren, maar ik merkte dat de screenreader verborgen elementen oppikte.  
+  Met Capslock + F7 kon ik alle links bekijken, en op dezelfde manier zag ik ook de headings. De docent stelde voor een extensie te installeren om de heading-structuur beter te kunnen zien.
 
   ### Bevindingen (Screenreader)
 
   <img src="readme-images/screenreadertest1.png" width="375px" alt="Verborgen items">
-  **Verborgen items:** de screenreader detecteerde elementen die visueel niet zichtbaar zijn.
+  **Verborgen items:** 
+  -De screenreader detecteerde elementen die visueel niet zichtbaar zijn.
 
   <img src="readme-images/screenreadertest2.png" width="375px" alt="Datum niet gedetecteerd">
-  **Datumselectie niet leesbaar:** de schermlezer kon het tabblad “Datum selecteren” niet detecteren.
+  **Datumselectie niet leesbaar:** 
+  -De schermlezer kon het tabblad “Datum selecteren” niet detecteren.
 
   ---
 
@@ -76,28 +76,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen (WCAG)
 
   **Global Code**
-Validate HTML: via https://validator.w3.org/nu/ kwamen veel fouten naar voren.
-Unique title: de welkomstpagina heeft geen paginatitel.
+-Validate HTML: via https://validator.w3.org/nu/ kwamen veel fouten naar voren.
+-Unique title: de welkomstpagina heeft geen paginatitel.
 
   **Keyboard**
-Navigeren met toetsenbord: sommige elementen konden niet geselecteerd worden.
+-Navigeren met toetsenbord: sommige elementen konden niet geselecteerd worden.
 
   **Mobile & Touch**
-Size & position: bepaalde items worden te klein weergegeven in de mobiele weergave.
-Spacing: sommige items staan te dicht op elkaar.
+-Size & position: bepaalde items worden te klein weergegeven in de mobiele weergave.
+-Spacing: sommige items staan te dicht op elkaar.
 
   **Headings**
-Meerdere H1-elementen op dezelfde pagina.
-Onlogische structuur: een H1 staat onder een H2.
+-Meerdere H1-elementen op dezelfde pagina.
+-Onlogische structuur: een H1 staat onder een H2.
 
   **Lists**
-Geen correcte lijststructuur: veel divs in divs gebruikt.
+-Geen correcte lijststructuur: veel divs in divs gebruikt.
 
   **Images**
-Geen alt-attributen aanwezig op sommige afbeeldingen.
+-Geen alt-attributen aanwezig op sommige afbeeldingen.
 
   **Appearance**
-Geen dark mode beschikbaar.
+-Geen dark mode beschikbaar.
   </details>
 
 
