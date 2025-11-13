@@ -63,10 +63,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Er was een optie voor de gebruiker om een ​​datum te selecteren, maar de schermlezer kan het tabblad Datum selecteren niet detecteren.
   
   ### WCAG Checklist:
+  
   ### Bevindingen:
   Lijst met je bevindingen die in de test naar voren kwamen:
+  <strong>Global Code:</strong>
+  Validate HTML: Ik heb https://validator.w3.org/nu/ gebruikt om de website te valideren. Er zaten veel fouten in.
+  Unique title for each page: Welkom pagina heeft geen naam.
+  
+  <strong>Keyboard</strong>
+  Navigate with keyboard: Bepaalde elementen konden niet worden geselecteerd.
+  <strong>Mobile & Touch</strong>
+  Size and position: Bepaalde items worden heel klein weergegeven in de telefoonweergave.
+  Enough space between items: Sommige items liggen heel dicht op elkaar.
 
-</details>
+  <strong>Headings</strong>
+  Multiple H1
+  Ilogical headings: H1 onder een H2
+
+  <strong>List</strong>
+  Use List elements: Divs in Divs
+
+  <strong>Images</strong>
+  No Alt attributes: Sommige images hebben geen alt text.
+
+  <strong>Apperance</strong>
+  No Dark Mode
+  
+  
+  </details>
 
 
 
