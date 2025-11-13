@@ -54,42 +54,50 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
-  ### Screenreader:
-  Nadat ik de toegankelijkheid op mijn apparaat had ingeschakeld, ging ik naar de website om te controleren hoe goed de schermlezer daarop presteerde. De bovenkant van de website deed het goed, maar toen ik naar beneden scrolde, begonnen er fouten te verschijnen. Ik      drukte op Tab om verder te gaan, maar toen ontdekte ik dat er een paar verborgen punten waren die de verteller opmerkte. Ik drukte op Capslock + F7 om het aantal links te bekijken en op dezelfde Tab zag ik dat ik de koppen kon zien. De docent stelde voor dat ik een     extensie zou installeren zodat ik de koppen in de juiste volgorde kon zien.
-  ### Bevindingen:
+### Screenreader
+
+  Nadat ik de toegankelijkheid op mijn apparaat had ingeschakeld, heb ik de website bezocht om te controleren hoe goed de schermlezer daarop presteerde. De bovenkant van de website deed het goed, maar toen ik verder naar beneden scrolde, begonnen er fouten te verschijnen.
+
+  Met **Tab** probeerde ik verder te navigeren, maar ik merkte dat de screenreader verborgen elementen oppikte.  
+  Met **Capslock + F7** kon ik alle links bekijken, en op dezelfde manier zag ik ook de headings. De docent stelde voor een extensie te installeren om de heading-structuur beter te kunnen zien.
+
+  ### Bevindingen (Screenreader)
+
   <img src="readme-images/screenreadertest1.png" width="375px" alt="Verborgen items">
-  Er waren verborgen items die de schermlezer oppikte.
-  <img src="readme-images/screenreadertest2.png" width="375px" alt="Verborgen items">
-  Er was een optie voor de gebruiker om een ​​datum te selecteren, maar de schermlezer kan het tabblad Datum selecteren niet detecteren.
-  
-  ### WCAG Checklist:
-  
-  ### Bevindingen:
-  Lijst met je bevindingen die in de test naar voren kwamen:
-  <strong>Global Code:</strong>
-  Validate HTML: Ik heb https://validator.w3.org/nu/ gebruikt om de website te valideren. Er zaten veel fouten in.
-  Unique title for each page: Welkom pagina heeft geen naam.
-  
-  <strong>Keyboard</strong>
-  Navigate with keyboard: Bepaalde elementen konden niet worden geselecteerd.
-  <strong>Mobile & Touch</strong>
-  Size and position: Bepaalde items worden heel klein weergegeven in de telefoonweergave.
-  Enough space between items: Sommige items liggen heel dicht op elkaar.
+  **Verborgen items:** de screenreader detecteerde elementen die visueel niet zichtbaar zijn.
 
-  <strong>Headings</strong>
-  Multiple H1
-  Ilogical headings: H1 onder een H2
+  <img src="readme-images/screenreadertest2.png" width="375px" alt="Datum niet gedetecteerd">
+  **Datumselectie niet leesbaar:** de schermlezer kon het tabblad “Datum selecteren” niet detecteren.
 
-  <strong>List</strong>
-  Use List elements: Divs in Divs
+  ---
 
-  <strong>Images</strong>
-  No Alt attributes: Sommige images hebben geen alt text.
+  ### WCAG Checklist
 
-  <strong>Apperance</strong>
-  No Dark Mode
-  
-  
+  ### Bevindingen (WCAG)
+
+  **Global Code**
+  - Validate HTML: via https://validator.w3.org/nu/ kwamen veel fouten naar voren.
+  - Unique title: de welkomstpagina heeft geen paginatitel.
+
+  **Keyboard**
+  - Navigeren met toetsenbord: sommige elementen konden niet geselecteerd worden.
+
+  **Mobile & Touch**
+  - Size & position: bepaalde items worden te klein weergegeven in de mobiele weergave.
+  - Spacing: sommige items staan te dicht op elkaar.
+
+  **Headings**
+  - Meerdere H1-elementen op dezelfde pagina.
+  - Onlogische structuur: een H1 staat onder een H2.
+
+  **Lists**
+  - Geen correcte lijststructuur: veel divs in divs gebruikt.
+
+  **Images**
+  - Geen alt-attributen aanwezig op sommige afbeeldingen.
+
+  **Appearance**
+  - Geen dark mode beschikbaar.
   </details>
 
 
