@@ -85,11 +85,13 @@ Ik heb met Ronald samengewerkt om de checklist te maken. De uitgeprinte checklis
   #### Bevindingen (WCAG)
 
   **Global Code**
--Validate HTML: via https://validator.w3.org/nu/ kwamen veel fouten naar voren.
+  -Validate HTML: via https://validator.w3.org/nu/ kwamen veel fouten naar voren.
 
  <img src="readme-images/wcaghecklist-validate html.png" width="375px" alt="Errors in HTML en CSS">
  
 -Unique title: de welkomstpagina heeft geen paginatitel.
+
+<img src="readme-images/wcaghecklist-uniquetitle.png" width="375px" alt="Geen title in de landings page">
 
   **Keyboard**
 -Navigeren met toetsenbord: sommige elementen konden niet geselecteerd worden.
