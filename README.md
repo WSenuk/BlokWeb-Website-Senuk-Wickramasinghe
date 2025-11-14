@@ -100,6 +100,9 @@ Ik heb met Ronald samengewerkt om de checklist te maken. De uitgeprinte checklis
 
 **Mobile & Touch**
 - Size & position: bepaalde items worden te klein weergegeven in de mobiele weergave.
+
+  <img src="readme-images/wcaghecklist-sizeenposition.png" width="375px" alt="Items worden te klein">
+  
 - Spacing: sommige items staan te dicht op elkaar.
 
 
