@@ -68,12 +68,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Bevindingen (Screenreader)
   
  **Verborgen items:** 
-  -De screenreader detecteerde elementen die visueel niet zichtbaar zijn.
   <img src="readme-images/screenreadertest1.png" width="375px" alt="Verborgen items">
+  -De screenreader detecteerde elementen die visueel niet zichtbaar zijn.
+  
   
 **Datumselectie niet leesbaar:** 
-  -De schermlezer kon het tabblad “Datum selecteren” niet detecteren.
   <img src="readme-images/screenreadertest2.png" width="375px" alt="Datum niet gedetecteerd">
+  -De schermlezer kon het tabblad “Datum selecteren” niet detecteren.
+  
 
   ---
 
