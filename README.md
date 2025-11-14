@@ -58,13 +58,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
-  ## Screenreader
+  
+  ### Screenreader
+  
   Nadat ik de toegankelijkheid op mijn apparaat had ingeschakeld, heb ik de website bezocht om te controleren hoe goed de schermlezer daarop presteerde. De bovenkant van de website deed het goed, maar toen ik verder naar beneden scrolde, begonnen er fouten te verschijnen.
   Met Tab probeerde ik verder te navigeren, maar ik merkte dat de screenreader verborgen elementen oppikte.  
   Met Capslock + F7 kon ik alle links bekijken, en op dezelfde manier zag ik ook de headings. De docent stelde voor een extensie te installeren om de heading-structuur beter te kunnen zien.
 
-  ### Bevindingen (Screenreader)
-
+  #### Bevindingen (Screenreader)
+  
  **Verborgen items:** 
   -De screenreader detecteerde elementen die visueel niet zichtbaar zijn.
   <img src="readme-images/screenreadertest1.png" width="375px" alt="Verborgen items">
@@ -77,7 +79,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### WCAG Checklist
 
-  ### Bevindingen (WCAG)
+  #### Bevindingen (WCAG)
 
   **Global Code**
 -Validate HTML: via https://validator.w3.org/nu/ kwamen veel fouten naar voren.
