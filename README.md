@@ -79,6 +79,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ---
 
   ### WCAG Checklist
+  
+Ik heb met Ronald samengewerkt om de checklist te maken. De uitgeprinte checklist gaf geen goede uitleg. We besloten om in plaats daarvan de website te gebruiken. Wat me opviel, is dat de checklist geen rekening houdt met animatie en overgangen. De checklist hielp wel om te zien dat er veel fouten op de website stonden die verbeterd moesten worden.
 
   #### Bevindingen (WCAG)
 
