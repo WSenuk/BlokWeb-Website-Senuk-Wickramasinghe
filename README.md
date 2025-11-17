@@ -133,14 +133,17 @@ Ik heb met Ronald samengewerkt om de checklist te maken. De uitgeprinte checklis
 
   ### de hele pagina: 
   <img src="readme-images/week1breakdownsketchhelepagina.png" width="375px" alt="breakdown van de hele pagina">
+  **Hele pagina**
   - Ik begon met het opdelen van alles in onderdelen uit de HTML-boilerplate-sjabloon. Ik voegde ook toe wat elke sectie is.
 
   ### dynamisch deel (Nav): 
   <img src="readme-images/week1breakdownsketchnav.png" width="375px" alt="breakdown van Nav">
+  **Nav**
   - De navigatiebalk is verdeeld in twee secties. Deze secties zijn verdeeld met behulp van een raster. Het bovenste deel van het raster wordt de bovenste balk genoemd en het onderste deel de navigatiebalk. Elk deel heeft ook een raster. Ze kunnen worden verplaatst of      vergroot of verkleind.
   
   ### dynamisch deel (Experience): 
   <img src="readme-images/week1breakdownsketchexperience.png" width="375px" alt="breakdown van Experience">
+  **Experience**
   - Ik heb de heldensectie ook met behulp van rasters gemaakt. Onder het rastergedeelte bevindt zich een gedeelte voor de verschillende ervaringen die je bij Figi kunt beleven. Ik heb een sectie genaamd Figi Experience aangemaakt en er een raster van gemaakt. Het bovenste gedeelte heet Experience Text en het onderste gedeelte heet Experience Cards. Experience Text heeft een h2 erin, die gecentreerd is. Experience Cards is ook een raster, met secties met kaarten en hun namen erop.
 
 </details>
