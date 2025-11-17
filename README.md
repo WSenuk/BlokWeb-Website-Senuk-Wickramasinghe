@@ -132,13 +132,13 @@ Ik heb met Ronald samengewerkt om de checklist te maken. De uitgeprinte checklis
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/week1breakdownsketchhelepagina.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### dynamisch deel (Nav): 
+  <img src="readme-images/week1breakdownsketchnav.png" width="375px" alt="breakdown van Nav">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### wellicht nog een dynamisch deel (Experience): 
+  <img src="readme-images/week1breakdownsketchexperience.png" width="375px" alt="breakdown van Experience">
 
 </details>
 
