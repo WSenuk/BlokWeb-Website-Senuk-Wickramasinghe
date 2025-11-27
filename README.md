@@ -171,11 +171,10 @@ Ik heb met Ronald samengewerkt om de checklist te maken. De uitgeprinte checklis
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+<input type="date">: Voor forms gebruiken
+CSS config: Voor een Carousel: https://chrome.dev/carousel-configurator/
+3 css pages - Above the main css, header and footer in it as well.
+Every section starts with H2
 
 </details>
 
