@@ -7,26 +7,35 @@
 	<title>Figi-Home</title>
 
 	<link href="styles/style.css" rel="stylesheet">
+  <link href="styles/indexstyle.css" rel="stylesheet">
   <script src="scripts/script.js" defer></script>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 
 </head>
-
   <body>
     <header>
       <section>
         <ul>
           <li><a href="tel:+31306927400">+31 30 69 27 400</a></li>
-          <li><a href="mailto:info@figi.nl">info@figi.nl</a></li>
+          <li><a href="mailto:info@figi.nlText">info@figi.nl</a></li>
         </ul>
       </section>
-      <a href="index.html"><img src="images/logo.png" alt="Figi logo"></a>
-      <section><!-- This section can be removed, The nav can be used to make the grid as well-->
+         <!--<button type="button" aria-hidden="true">
+            <img src="/images/hamburger.png"alt="Menu">
+          </button>
+        -->
+          <a href="index.html"><img src="images/logo.png" alt="Figi logo,Home Page link"></a>
+      <section>
         <nav>
+           <!--
+          <button type="button" aria-hidden="true">
+            <img src="images/sluit.png" alt="Sluit Menu">
+          </button>
+          -->
           <ul>
             <li><a href="">Hotel</a></li>
             <li><a href="">Meetings en Events</a></li>
-            <li><a href="">Grand Café</a></li>
+            <li><a href="">Grand Cafe</a></li>
             <li><a href="">Theater</a></li>
             <li><a href="">Bioscoop</a></li>
             <li><a href="">Over FIGI</a></li>
@@ -41,6 +50,7 @@
         <h1>Ruime kamers en suites</h1>
         <a href="">Boek een hotelkamer in Zeist</a>
       </section>
+
       <section>
         <h2>Ervaar het in Figi</h2>
         <p>
@@ -62,7 +72,7 @@
             <img src="images/cardfilm.png"alt="Bioscoopstoelen in Figi">
           </li>
           <li>
-            <p>Theatervoorstellingen</p>
+            <p>Theater Voorstellingen</p>
             <img src="images/cardtheater.jpg"alt="Theaterzaal bij Figi">
           </li>
           <li>
@@ -83,25 +93,40 @@
           </li>
         </ul>
       </section>
+
       <section>
-        <ul>
-            <li>
-              <img src="" alt="Tonijn met komkommer in het Grand Café">
-            </li>
-            <li>
-              <img src="" alt="Interieur van het Grand Café in Figi">
-            </li>
-            <li>
-              <img src="" alt="Koffie en taart in het Grand Café">
-            </li>
-        </ul>
-          <h2>Ervaar de pure smaak van Figi</h2>
-          <p>
-            Reserveer eenvoudig online een tafel voor een diner of feestje.
-            Bellen kan natuurlijk ook op <strong>030 692 74 00</strong>.
-          </p>
-          <a href="">Reserveer je tafel</a>
+        <h2>Plan je verblijf</h2>
+        <section>
+          <h3>Boek een kamer</h3>
+          <form action="#">
+            <p>Datum aankomst</p>
+            <input type="date" name="arrival">
+            <p>Datum vertrek</p>
+            <input type="date" name="departure">
+            <button type="submit">Zoek kamers</button>
+          </form>
         </section>
+        <section>
+        <h3>Hotel Reviews</h3>
+        <ul>
+          <li><p> Prima verblijf na aanleiding van een bruiloft in slot Zeist. Lekkere geslapen, prima bedden,
+             schone kamers en erg uitgebreid ontbijt.
+             Het personeel was erg vriendelijk en behulpzaam. Een echte aanrader.</p>
+             <p>Anita V.</p></li>
+          <li><p> We waren in coronatijd ook al eens geweest.
+                Maar het was thuiskomen voor ons. Vriendelijk personeel, perfecte locatie om in de buurt wat te gaan ondernemen.
+                mooie kamers,kortom, wij zijn fan van het hotel en gaan zeker nog een keer terugkomen</p>
+              <p>Fiona J.</p>
+
+          <li>
+            <p> Prachtige omgeving om te fietsen. Heerlijke bedden, prima ontbijt en gastvrij personeel.
+               Ook heel leuk: de bioscoop is vanuit het hotel binnendoor te bereiken en je krijgt nog eens 3,50 korting op
+                je bioscoopkaartje. Vorig jaar ook al geweest en volgend jaar gaan we weer.</p>
+              <p>Sjoerd V.</p>
+          </li>
+        </ul>
+        </section>
+      </section>
     </main>
 
     <footer>
@@ -111,11 +136,11 @@
           <p>Het Rond 2, 3701 HS Zeist</p>
           <p>030 692 74 00 - <a href="mailto:info@figi.nl">info@figi.nl</a></p>
 
-          <h3>Bioscoop en Theater</h3>
+          <h4>Bioscoop en Theater</h4>
           <p>0900 9203 - <a href="mailto:info@ntk.nl">info@ntk.nl</a></p>
           <p>(bereikbaar van 10:00 tot 20:00 uur)</p>
 
-          <h3>Meetings en Events</h3>
+          <h4>Meetings en Events</h4>
           <p>030 692 74 00 - <a href="mailto:sales@figi.nl">sales@figi.nl</a></p>
 
           <ul>
