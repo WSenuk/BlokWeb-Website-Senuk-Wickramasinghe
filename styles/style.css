@@ -2,207 +2,146 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("/fonts/GTWalsheimProRegular.woff2")  format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../fonts/GTWalsheimProBold.woff2") format("woff2");
+  font-weight: 700;
+}
+
 :root {
-  --color-text: #111;
-  --color-background: #f2f2f2;
-  --figi-green: #123236;     
-  --figi-white: #ffffff;     
+  --color-backgroundbeige : #f2f2f2;
+  --color-textwhite: #ffffff;
+  --color-textgreen: #07181b;
+  --color-textblack: #111;
+  --figi-white: #ffffff;
   --figi-brown: #555555;    
-
-/*@font-faces needs to be added*/
+  --figi-hightlightyellow: #c8ff00; 
+  --figi-hightlight: #123236; 
+  --figi-whitetoyellow: #c8ff00;   
+  --figi-green: #123236;     
+    
 
 }
-img{
-  height: 60px;
-  width: auto;
-}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --color-backgroundbeige: #0c1213;
+    --color-textwhite: #ffffff;
+    --color-textgreen: #ffffff;
+    --color-textblack: #f7f7f7;
+    --figi-green: #07181b;    
+    --figi-white: #141a1c;    
+    --figi-brown: #dddddd;
+    --figi-hightlight: #c8ff00; 
+    --figi-whitetoyellow: #c8ff00; 
+  }
+  }
+
 body {
-  color: var(--color-text);
-  background-color: var(--color-background);
+  background-color: var(--color-backgroundbeige);
   margin: 0;
+  font-family: "GTWalsheimPro";
 }
-/* Main-Header*/
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  color:var(--color-textwhite);
+}
+
+/* Header*/
 header {
   display: grid;
-  grid-template-rows: auto auto;  
-  padding: 0;
-  margin: 0;
+  grid-template-columns: auto 1fr;   
+  grid-template-rows: auto auto; 
+
+  position: sticky;
+  top: -2em;
+  z-index: 50;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+
+/* Top Bar*/
 header > section:nth-of-type(1) {
-  background-color: var(--figi-green);     
+  grid-row: 1;
+  grid-column: 1 / -1;               
+  background-color: var(--figi-green);
   display: grid;
   grid-template-columns: 1fr max-content;
-  padding: 0.5em;
+
+  align-items: center;
+  padding: 0.5em 1em;                                    
 }
 
 header > section:nth-of-type(1) > ul {
-  grid-column: 2;
-  list-style: none;
+  grid-column: 2;                    
   display: grid;
-  column-gap: 1.5em;
-  grid-auto-flow: column; /*Ronald explanation: Auto sets the items in order*/
+  grid-auto-flow: column;
+  column-gap: 1em;
+  
+  list-style: none;
+  margin: 0;
 }
 
 header > section:nth-of-type(1) a {
-  color: var(--figi-white);
+  color: var(--color-textwhite);
   text-decoration: none;
   font-size: 0.9em;
+  border-right: 0.1em solid #a6a6a6;
+  padding-right: 1em;
 }
 
-header > a {
-  padding: 0.8em 1.5em;
-}
 
-header > a img {
-    position: absolute;
-     z-index: 1;
-  
-}
-
-header > section:nth-of-type(2) {
+/* Nav Bar*/
+header > section:nth-of-type(2) {        
+  grid-row: 2;
+  grid-column: 1 / -1;
   display: grid;
+
   align-items: center;
-  padding: 0 1.5em 1.5em 0;
+  height: 4.1em;
+  background-color: var(--figi-white);
 }
 
-header > section:nth-of-type(2) nav > ul {
-  margin: 0;
-  padding: 0;
+header > section:nth-of-type(2) nav > ul {        
   list-style: none;
-
   display: grid;
-  grid-auto-flow: column;
-  column-gap: 2em;
 
+  grid-auto-flow: column;
+  column-gap: 1.3em;
   justify-content: end;
-  align-items: center;
+
 }
 
 header > section:nth-of-type(2) nav a {
   text-decoration: none;
   color: var(--figi-brown);
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 0.9em;          
+  border-right: 0.1em solid #a6a6a6;
+  padding-right: 1em; 
 }
 
 header > section:nth-of-type(2) nav a:hover {
-  color: var(--figi-green);
+  color: var(--figi-hightlight);
 }
 
-/* Main-Hero*/
-main > section:nth-of-type(1) {
-  
-  height: 30em;              
-  display: grid;
-  grid-template-rows: auto auto; 
-  row-gap: 1.5em;
-  align-content: center;         
-  justify-items: center;        
-  text-align: center;
-  padding: 4em 1.5em;
-  background-image: url("../images/hero.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  color: var(--figi-white);             
+/* Nav Bar Image*/
+header a img {
+  position: absolute;
+  top:0;
+  top:1.5em;
+  left:0;
+  left: 1em;
+  height: 82px;
 }
 
-main > section:nth-of-type(1) > h1 {
-  margin: 0;
-  font-size: 2.6em;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-shadow: 0 0.1em 0.3em black; 
-}
-
-main > section:nth-of-type(1) > a {
-  padding: 1em 2.2em;
-  background-color: var(--figi-white); 
-  color: var(--figi-green);
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: 700;
-  text-transform: uppercase;
-  box-shadow: 0 0.12em 0.3em rgba(0, 0, 0, 0.4);
-}
-
-main > section:nth-of-type(1) > a:hover {
-  background-color:var(--figi-green);  
-  color: var(--figi-white);  
-}
-
-/* Main-Experinece*/
-main > section:nth-of-type(2) {
-  padding: 4em 1.5em;
-}
-
-main > section:nth-of-type(2) > h2 {
-  text-align: center;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-main > section:nth-of-type(2) > p {
-  margin: 0 0 3em;
-  text-align: center;
-}
-
-main > section:nth-of-type(2) > ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: "";
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
-  gap: 2em 3em;
-}
-
-main > section:nth-of-type(2) > ul > li {
-  background-color: #000;   
-  display: grid;
-  justify-items: center;
-  align-items: center;
-
-
-  clip-path: polygon(
-    0 0, 
-    calc(50% - .75em) 0,
-    50% 1em,
-    calc(50% + .75em) 0,
-    100% 0, 
-    100% 100%, 
-    0 100%, 
-    0 0
-  );
-}
-
-
-main > section:nth-of-type(2) > ul > li > p {
-  grid-row-start: 1;
-  grid-column-start: 1;
-  z-index: 1;
-
-  background-color: rgb(0 0 0 / .2);
-  border-top: solid 0.06em var(--figi-white);
-  border-bottom: solid 0.06em var(--figi-white);
-
-  width: 100%;
-  padding: 1em;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-}
-
-
-main > section:nth-of-type(2) > ul > li > img {
-  grid-row-start: 1;
-  grid-column-start: 1;
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/*@media quiries needs to be added*/
+/* Nav Bar Hamburger*/
