@@ -194,12 +194,13 @@ Every section starts with H2
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  |student 1: August| student 2: Senuk W.A | student 3: Kevin    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | Hamburger Menu     | en ik dit    | en dan ik dat    |
-  | en dat ook nog | Pop-Up voor text   | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+ 
+  | August                                 | Senuk              | student 3    | student 4        |
+  | ---                                    | ---                | ---          | ---              |
+  | Hoe maak ik mijn h2 en a naast elkaar? | Hamburger Menu     | en ik dit    | en dan ik dat    |
+  | Is mijn media query voor meter oke?    | Pop-Up voor text   | nog een punt | dit wil ik zeker |
+  | Hoe hide ik mijn h3's?                 | ...                | ...          | ...              |
+ 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
