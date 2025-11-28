@@ -194,10 +194,10 @@ Every section starts with H2
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  |student 1: August| student 2: Senuk W.A | student 3: Kevin    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | dit bespreken  | Hamburger Menu     | en ik dit    | en dan ik dat    |
+  | en dat ook nog | Pop-Up voor text   | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
