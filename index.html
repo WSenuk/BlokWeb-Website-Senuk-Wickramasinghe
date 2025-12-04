@@ -1,177 +1,206 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Senuk">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Figi-Home</title>
 
-	<link href="styles/style.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Senuk">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Figi-Home</title>
+  <link href="styles/style.css" rel="stylesheet">
   <link href="styles/indexstyle.css" rel="stylesheet">
   <script src="scripts/script.js" defer></script>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-
 </head>
-  <body>
-    <header>
-      <section>
+
+<body>
+  <header>
+    <section>
+      <ul>
+        <li><a aria-label="Figi nummer" href="tel:+31306927400">+31 30 69 27 400</a></li>
+        <li><a alt="Figi email address" href="mailto:info@figi.nlText">info@figi.nl</a></li>
+      </ul>
+    </section>
+    <a alt="Figi logo,Home Page link" href="index.html"><img src="images/logo.png"></a>
+    <section>
+      <nav open="false" id="nav">
         <ul>
-          <li><a href="tel:+31306927400">+31 30 69 27 400</a></li>
-          <li><a href="mailto:info@figi.nlText">info@figi.nl</a></li>
+          <li><a alt="Link om een hotel te boeken" href="">Hotel</a></li>
+          <li><a alt="Link om ruimte te huren voor meetings en Events" href="">Meetings en Events</a></li>
+          <li><a alt="Link naar onze Cafe menu" href="">Grand Cafe</a></li>
+          <li><a alt="Link naar onze Theater" href="">Theater</a></li>
+          <li><a alt="Link naar onze Bioscoop, kaartjes halen" href="">Bioscoop</a></li>
+          <li><a alt="Link om meer te weten over Figi" href="overfigi.html">Over FIGI</a></li>
+          <li><a alt="Link naar onze contact pagina" href="">Contact</a></li>
         </ul>
-      </section>
-         <!--<button type="button" aria-hidden="true">
-            <img src="/images/hamburger.png"alt="Menu">
-          </button>
-        -->
-          <a href="index.html"><img src="images/logo.png" alt="Figi logo,Home Page link"></a>
-      <section>
-        <nav>
-           <!--
-          <button type="button" aria-hidden="true">
-            <img src="images/sluit.png" alt="Sluit Menu">
-          </button>
-          -->
-          <ul>
-            <li><a href="">Hotel</a></li>
-            <li><a href="">Meetings en Events</a></li>
-            <li><a href="">Grand Cafe</a></li>
-            <li><a href="">Theater</a></li>
-            <li><a href="">Bioscoop</a></li>
-            <li><a href="">Over FIGI</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </nav>
-      </section>
-    </header>
+      </nav>
+    </section>
 
-    <main>
+    <button id="hamburgerMenuIcon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <img src="images/garland.png" alt="garland - versering">
+  </header>
+  <main>
+    <section>
+      <h1>Ruime kamers en suites</h1>
+      <video autoplay muted loop playsinline>
+        <source src="/videos/hero.mp4" type="video/mp4" alt="Video over onze bedrijf">
+      </video>
+      <a alt="Boek een kamer in Figi" href="">Boek een hotelkamer in Zeist</a>
+    </section>
+    <section>
+      <h2>Ervaar het in Figi</h2>
+      <p>
+        FIGI biedt een breed scala aan culturele, culinaire, congres- en
+        overnachtingsfaciliteiten. Onder één dak zit een hotel, restaurant,
+        talrijke vergader- en congreszalen, bioscoop en theater.
+      </p>
+      <ul>
+        <li>
+          <p>Reserveer een tafel</p>
+          <img src="images/cardtafel.jpg" alt="Reserveer een tafel in het Grand Café">
+        </li>
+        <li>
+          <p>Boek een kamer</p>
+          <img src="images/cardkamer.jpg" alt="Hotelkamer in Figi">
+        </li>
+        <li>
+          <p>Kies een film</p>
+          <img src="images/cardfilm.png" alt="Bioscoopstoelen in Figi">
+        </li>
+        <li>
+          <p>Theater Voorstellingen</p>
+          <img src="images/cardtheater.jpg" alt="Theaterzaal bij Figi">
+        </li>
+        <li>
+          <p>Meetings en Events</p>
+          <img src="images/cardmeetings.jpg" alt="Meetings en evenementenruimte">
+        </li>
+        <li>
+          <p>Werken bij Figi</p>
+          <img src="images/cardwerk.jpg" alt="Werken bij Figi">
+        </li>
+        <li>
+          <p>Familiebedrijf Figi</p>
+          <img src="images/cardfamilie.jpg" alt="Geschiedenis van Figi">
+        </li>
+        <li>
+          <p>Bereikbaarheid</p>
+          <img src="images/cardbereikbaarheid.jpg" alt="Gebouw van Figi">
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Plan je verblijf</h2>
       <section>
-        <h1>Ruime kamers en suites</h1>
-        <a href="">Boek een hotelkamer in Zeist</a>
+        <h3>Boek een kamer</h3>
+        <form action="#">
+          <p>Datum aankomst</p>
+          <input alt="Boek een hotel kamer, selecteer een datum van aankomst" type="date" name="arrival">
+          <p>Datum vertrek</p>
+          <input alt="Selecteer een datum van verterken" type="date" name="departure">
+          <button alt="Klik om te comfirmen" type="submit">Zoek kamers</button>
+        </form>
       </section>
-
       <section>
-        <h2>Ervaar het in Figi</h2>
-        <p>
-          FIGI biedt een breed scala aan culturele, culinaire, congres- en
-          overnachtingsfaciliteiten. Onder één dak zit een hotel, restaurant,
-          talrijke vergader- en congreszalen, bioscoop en theater.
-        </p>
-        <ul>
-          <li>
-            <p>Reserveer een tafel</p>
-            <img src="images/cardtafel.jpg"alt="Reserveer een tafel in het Grand Café">
-          </li>
-          <li>
-            <p>Boek een kamer</p>
-            <img src="images/cardkamer.jpg"alt="Hotelkamer in Figi">
-          </li>
-          <li>
-            <p>Kies een film</p>
-            <img src="images/cardfilm.png"alt="Bioscoopstoelen in Figi">
-          </li>
-          <li>
-            <p>Theater Voorstellingen</p>
-            <img src="images/cardtheater.jpg"alt="Theaterzaal bij Figi">
-          </li>
-          <li>
-            <p>Meetings en Events</p>
-            <img src="images/cardmeetings.jpg"alt="Meetings en evenementenruimte">
-          </li>
-          <li>
-            <p>Werken bij Figi</p>
-            <img src="images/cardwerk.jpg"alt="Werken bij Figi">
-          </li>
-          <li>
-            <p>Familiebedrijf Figi</p>
-            <img src="images/cardfamilie.jpg"alt="Geschiedenis van Figi">
-          </li>
-          <li>
-            <p>Bereikbaarheid</p>
-            <img src="images/cardbereikbaarheid.jpg"alt="Gebouw van Figi">
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Plan je verblijf</h2>
-        <section>
-          <h3>Boek een kamer</h3>
-          <form action="#">
-            <p>Datum aankomst</p>
-            <input type="date" name="arrival">
-            <p>Datum vertrek</p>
-            <input type="date" name="departure">
-            <button type="submit">Zoek kamers</button>
-          </form>
-        </section>
-        <section>
         <h3>Hotel Reviews</h3>
         <ul>
-          <li><p> Prima verblijf na aanleiding van een bruiloft in slot Zeist. Lekkere geslapen, prima bedden,
-             schone kamers en erg uitgebreid ontbijt.
-             Het personeel was erg vriendelijk en behulpzaam. Een echte aanrader.</p>
-             <p>Anita V.</p></li>
-          <li><p> We waren in coronatijd ook al eens geweest.
-                Maar het was thuiskomen voor ons. Vriendelijk personeel, perfecte locatie om in de buurt wat te gaan ondernemen.
-                mooie kamers,kortom, wij zijn fan van het hotel en gaan zeker nog een keer terugkomen</p>
-              <p>Fiona J.</p>
-
+          <li>
+            <p> Prima verblijf na aanleiding van een bruiloft in slot Zeist. Lekkere geslapen, prima bedden,
+              schone kamers en erg uitgebreid ontbijt.
+              Het personeel was erg vriendelijk en behulpzaam. Een echte aanrader.</p>
+            <p>Anita V.</p>
+          </li>
+          <li>
+            <p> We waren in coronatijd ook al eens geweest.
+              Maar het was thuiskomen voor ons. Vriendelijk personeel, perfecte locatie om in de buurt wat te gaan
+              ondernemen.
+              mooie kamers,kortom, wij zijn fan van het hotel en gaan zeker nog een keer terugkomen</p>
+            <p>Fiona J.</p>
           <li>
             <p> Prachtige omgeving om te fietsen. Heerlijke bedden, prima ontbijt en gastvrij personeel.
-               Ook heel leuk: de bioscoop is vanuit het hotel binnendoor te bereiken en je krijgt nog eens 3,50 korting op
-                je bioscoopkaartje. Vorig jaar ook al geweest en volgend jaar gaan we weer.</p>
-              <p>Sjoerd V.</p>
+              Ook heel leuk: de bioscoop is vanuit het hotel binnendoor te bereiken en je krijgt nog eens 3,50 korting
+              op
+              je bioscoopkaartje. Vorig jaar ook al geweest en volgend jaar gaan we weer.</p>
+            <p>Sjoerd V.</p>
           </li>
         </ul>
-        </section>
       </section>
-    </main>
-
-    <footer>
+    </section>
+    <section>
       <section>
-        <section>
-          <h2>Figi</h2>
-          <p>Het Rond 2, 3701 HS Zeist</p>
-          <p>030 692 74 00 - <a href="mailto:info@figi.nl">info@figi.nl</a></p>
-
-          <h4>Bioscoop en Theater</h4>
-          <p>0900 9203 - <a href="mailto:info@ntk.nl">info@ntk.nl</a></p>
-          <p>(bereikbaar van 10:00 tot 20:00 uur)</p>
-
-          <h4>Meetings en Events</h4>
-          <p>030 692 74 00 - <a href="mailto:sales@figi.nl">sales@figi.nl</a></p>
-
-          <ul>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">X</a></li>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="">Instagram</a></li>
-          </ul>
-        </section>
-        <section>
-          <ul>
-            <li><a href="">Hotelkamer boeken</a></li>
-            <li><a href="">Meetings en Events organiseren</a></li>
-            <li><a href="">Tafel reserveren</a></li>
-            <li><a href="">Naar het Theater</a></li>
-            <li><a href="">Naar de Bioscoop</a></li>
-            <li><a href="">Werken bij Figi</a></li>
-            <li><a href="">Theatertechniek</a></li>
-          </ul>
-        </section>
-      </section>
-      <section>
-        <p>2025 Hotel Theater Figi</p>
         <ul>
-          <li><a href="">Privacyverklaring</a></li>
-          <li><a href="">Cookies</a></li>
-          <li><a href="">English</a></li>
+          <li><img src="images/cardbereikbaarheid.jpg" alt="Gebouw van Figi"></li>
+          <li><img src="images/cardkamer.jpg" alt="Hotelkamer in Figi"></li>
+          <li><img src="images/cardfamilie.jpg" alt="Geschiedenis van Figi"></li>
         </ul>
       </section>
-    </footer>
-  </body>
+      <section>
+        <h2>Ervaar de pure smaak van FIGI</h2>
+        <p>Reserveer eenvoudig online een tafel voor een diner of feestje. Bellen kan natuurlijk ook op 030 692 74 00.
+        </p>
+        <button alt="Reserveer een Tafel"> Reserveer Je Tafel</button>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <section>
+        <h2>Figi</h2>
+        <p>Het Rond 2, 3701 HS Zeist
+        <p>030 692 74 00 - <a alt="Onze telefoon nummer" href="mailto:info@figi.nl">info@figi.nl</a></p>
+        </p>
+        <h3>Bioscoop en Theater</h3>
+        <p>0900 9203 - <a alt="Onze email address om informatie te hebben" href="mailto:info@ntk.nl">info@ntk.nl</a>
+        <p>(bereikbaar van 10:00 tot 20:00 uur)</p>
+        </p>
+        <h3>Meetings en Events</h3>
+        <p>030 692 74 00 - <a alt="Email address van onze sales afdeling" href="mailto:sales@figi.nl">sales@figi.nl</a>
+        </p>
+        <ul>
+          <li><a alt="Link naar onze Facebook" href="">Facebook</a></li>
+          <li><a alt="Link naar onze Twitter" href="">X</a></li>
+          <li><a alt="Link naar onze LinkedIn" href="">LinkedIn</a></li>
+          <li><a alt="Link naar onze Instagram" href="">Instagram</a></li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li><a alt="Link om een hotel te boeken" href="">Hotelkamer boeken</a></li>
+          <li><a alt="Link om ruimte te huren voor meetings en Events" href="">Meetings en Events organiseren</a></li>
+          <li><a alt="Link naar onze Cafe menu" href="">Tafel reserveren</a></li>
+          <li><a alt="Link naar onze Theater" href="">Naar het Theater</a></li>
+          <li><a alt="Link naar onze Bioscoop, kaartjes halen" href="">Naar de Bioscoop</a></li>
+          <li><a alt="Link om werk te vinden bij Figi" href="">Werken bij Figi</a></li>
+          <li><a alt="Link om meer te weten over onze TheaterTechnieken" href="">Theatertechniek</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Aanmelden nieuwsbrief</h3>
+        <form class="newsletter-form">
+          <label for="email">Email*</label>
+          <input alt="Vul je email address om een bericht naar ons te sturen" type="email" id="email" name="email"
+            required>
+          <label for="voornaam">Voornaam</label>
+          <input alt="Vul je Voornaam om een bericht naar ons te sturen" type="text" id="voornaam" name="voornaam">
+          <label for="achternaam">Achternaam</label>
+          <input alt="Vul je Achternaam om een bericht naar ons te sturen" type="text" id="achternaam"
+            name="achternaam">
+          <button alt="Sumbit bericht" type="submit">Aanmelden</button>
+        </form>
+      </section>
+    </section>
+    <section>
+      <p>2025 Hotel Theater Figi</p>
+      <ul>
+        <li><a alt="Link naar onze Privacyverklaring" href="">Privacyverklaring</a></li>
+        <li><a alt="Link naar onze Cookies opties" href="">Cookies</a></li>
+        <li><a alt="Click here to turn the website to English" href="">English</a></li>
+      </ul>
+    </section>
+  </footer>
+</body>
 
 </html>
-
