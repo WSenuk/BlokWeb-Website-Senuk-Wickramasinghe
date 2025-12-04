@@ -204,11 +204,9 @@ Every section starts with H2
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+Codepen voorbeeld gebruiken voor Hamburger menu
+Surface plane toevoegen
+H2 en H3 hierachy moet je nog toevoegen
 
 </details>
 
@@ -221,12 +219,66 @@ Every section starts with H2
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  
+  ### Screenreader
+  
+Ik heb de schermlezer op mijn apparaat aangezet en ik kan erdoorheen bladeren door op Tab en de pijltjestoetsen te drukken. Ik heb geprobeerd Capslock F6 te gebruiken om naar de koppen te springen. Maar mijn laptop geeft aan dat de functie niet werkt.
 
+  #### Bevindingen (Screenreader)
+  
+<img src="readme-images/screenreadertest1.png" width="375px" alt="Werkende datum selecter">
+
+**Verborgen items:** In de vorige test met de schermlezer was er geen optie voor de gebruiker om de datums te zien en iets te selecteren. De schermlezer selecteert de datums nu wel.
+
+
+
+
+
+  ### WCAG Checklist
+  
+Deze keer heb ik de test alleen gedaan. Mijn code is nog niet helemaal af en ik moest nog een aantal onderdelen toevoegen om hem responsive te maken.
+
+  #### Bevindingen (WCAG)
+
+**Content**
+- Alles staat op zijn plaats, de links zijn beschreven. Ik gebruik eenvoudige taal.
+**Global Code**
+- Het enige probleem dat ik met dit onderdeel had, is dat wanneer ik mijn HTML valideer, er staat dat ik Aria Label moet gebruiken in plaats van alt-tekst.
+- En ik moet divs gebruiken, wat niet klopt.
+
+**Keyboard**
+- De datumselector kan nu met het toetsenbord worden bediend.
+- Ik moet nog een focusstatus toevoegen.
+
+
+**Mobile & Touch**
+-Er is een probleem met horizontaal scrollen, omdat een deel van de voettekst nog steeds zichtbaar is.
+
+
+**Headings**
+- Alle onderdelen hiervan zijn nu beter. Er is slechts één H1 en er is een hiërarchie voor de koppen.
+
+
+**Lists**
+- Er worden geen divs meer gebruikt in de HTML. Alleen secties en 3 spans. De spans worden gebruikt voor een hamburgermenu.
+
+
+**Images**
+- Bijna alles klopt. Ik heb een alt-tekst aan een kerstversiering toegevoegd. Die moet verwijderd worden.
+
+**Appearance**
+-Ik heb een video aan de achtergrond toegevoegd. Deze kan worden gestopt met de optie 'Reduced Motion'.
+
+**Controls**
+-Moet nog focus states toevoegen.
+
+**Appearance**
+- Heeft een darkmode.
+- Contrast van de tekst moet nog nagekeken worden en  de maat van de text moet nog aangepast worden.
+  
+ **Color contrast**
+- Contrast van de tekst moet nog nagekeken worden en  de maat van de text moet nog aangepast worden.
 </details>
-
-
 
 
 
