@@ -226,7 +226,7 @@ Ik heb de schermlezer op mijn apparaat aangezet en ik kan erdoorheen bladeren do
 
   #### Bevindingen (Screenreader)
   
-<img src="readme-images/screenreadertest1.png" width="375px" alt="Werkende datum selecter">
+<img src="readme-images/screenreadertest2-1.png" width="375px" alt="Werkende datum selecter">
 
 **Verborgen items:** In de vorige test met de schermlezer was er geen optie voor de gebruiker om de datums te zien en iets te selecteren. De schermlezer selecteert de datums nu wel.
 
@@ -294,10 +294,10 @@ Deze keer heb ik de test alleen gedaan. Mijn code is nog niet helemaal af en ik 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Senuk W.A.     | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Hoe kan ik een video toevoegen in Github | en dit             | en ik dit    | en dan ik dat    |
+  | Wat kan ik nog meer toevoegen qua Surface Plane                | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
