@@ -1,0 +1,298 @@
+/* Main - Hero*/
+main>section:nth-of-type(1) {
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 1.5em;
+  justify-items: center;
+  padding: 35vh 2vw;
+  background-image: url("../images/herooverfigi.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--figi-white);
+}
+
+main>section:nth-of-type(1)>h1 {
+  margin: 0;
+  font-size: 2.6em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.05em black;
+}
+
+/* Vacatures section */
+main>section:nth-of-type(2) {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: var(--figi-white);
+}
+
+main>section:nth-of-type(2)>h2 {
+  text-align: center;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--greentowhite);
+  font-weight: 700;
+  margin: 0.5em;
+}
+
+main>section:nth-of-type(2) li {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2em;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 2rem;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+
+main>section:nth-of-type(2) ul li h3 {
+  text-align: left;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  margin: 0.5em;
+  color: var(--greentowhite);
+}
+
+main>section:nth-of-type(2) ul li p {
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+  margin: 0.5em;
+  color: var(--greentowhite);
+}
+
+main>section:nth-of-type(2) ul li a {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--color-textwhite);
+  background-color: var(--color-textgreen);
+  padding: 0.8em 1.6em;
+  text-decoration: none;
+  grid-column: 2;
+  grid-row: 1 / -1;
+  justify-self: end;
+}
+@media (max-width: 800px) {
+
+  main>section:nth-of-type(2) li {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  main>section:nth-of-type(2) ul li a {
+    grid-column: 1;      
+    grid-row: auto;     
+    justify-self: start; 
+    width: auto;         
+    margin-top: 1em;
+  }
+
+    main > section:nth-of-type(2) > section:last-of-type {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  main > section:nth-of-type(2) > section:last-of-type a {
+    display: block;
+    width: 100%;
+    max-width: 20rem; 
+    margin: 1.5em auto 0 auto;
+  }
+}
+
+main>section:nth-of-type(2)>section:last-of-type {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: center;
+}
+
+
+main>section:nth-of-type(2)>section:last-of-type a {
+  background-color: rgb(202, 202, 10);
+  border: none;
+  padding: 0.8em 2em;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #1e2e31;
+  text-decoration: none;
+  transition: ease 1s;
+}
+
+main>section:nth-of-type(2)>section:last-of-type a:hover {
+  background-color: #394e52;
+}
+
+/* Image theater */
+main>section:nth-of-type(3) img {
+  height: 30em;
+  width: 100%;
+  filter: grayscale(80%);
+}
+
+/* Voel je thuis */
+main>section:nth-of-type(4) {
+
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+main>section:nth-of-type(4) h2 {
+  text-align: center;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--greentowhite);
+  font-weight: 700;
+  margin: 0.5em;
+}
+
+main>section:nth-of-type(4) p {
+  text-align: center;
+  font-family: 'LaBelleAurore', cursive;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #3b3b3b;
+  margin-top: -0.3em;
+  color: var(--greentowhite);
+}
+
+main>section:nth-of-type(4) ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 2rem 0 0;
+  list-style: none;
+  padding-bottom: 2em;
+}
+
+main>section:nth-of-type(4) li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+main>section:nth-of-type(4) li img {
+  height: 20em;
+  width: auto;
+  display: block;
+}
+
+main>section:nth-of-type(4)>a {
+  background-color: var(--figi-green);
+  border: none;
+  padding: 0.8em 2em;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-textwhite);
+  text-decoration: none;
+  transition: ease 1s;
+}
+
+@media (max-width: 920px) {
+
+  main>section:nth-of-type(4) ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Al meer dan 150 jaar gastvrijheid */
+main>section:nth-of-type(5) {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 8vw;
+  background-color: #f5f2ec;
+}
+
+main>section:nth-of-type(5)>img {
+  flex: 0 0 45%;/* 1.1 */
+  max-width: 45%;
+  height: auto;
+  display: block;
+}
+
+main>section:nth-of-type(5)>section {
+  flex: 1;
+}
+
+main>section:nth-of-type(5) h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-textgreen);
+  font-weight: 700;
+  margin: 0 0 1.5rem;
+}
+
+main>section:nth-of-type(5) p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #3b3b3b;
+  margin: 0 0 2rem;
+}
+
+main>section:nth-of-type(5) a {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  background-color: #0d3438;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+main>section:nth-of-type(5) a:hover {
+  background-color: #145058;
+}
+
+@media (max-width: 900px) {
+  main>section:nth-of-type(5) {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+  }
+
+  main>section:nth-of-type(5)>img {
+    max-width: 100%;
+    flex-basis: auto;
+  }
+
+  main>section:nth-of-type(5)>section {
+    width: 100%;
+  }
+}
+
+/*Bronnen*/
+
+/* Al meer dan 150 jaar gastvrijheid 
+-1.1(Flex direction)Ik wilde de afbeelding naar links laten komen en ik wilde geen rasters meer gebruiken. 
+Ik vroeg AI hoe ik dat het beste kon doen. En hij gaf me deze code.
+

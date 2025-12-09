@@ -1,0 +1,580 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("/fonts/GTWalsheimProRegular.woff2") format("woff2");/* Bronnen-Body*//*1.1*/
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../fonts/GTWalsheimProBold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'LaBelleAurore';
+  src: url('../fonts/LaBelleAurore-Regular.ttf') format('truetype');
+}
+
+:root {
+  --color-textwhite: #ffffff;
+  --color-textgreen: #07181b;
+  --color-textblack: #111;
+  --figi-green: #123236;
+  --figi-white: #ffffff;
+  --figi-beige: #d8d8d8;
+  --greentowhite: #07181b;
+  --hover-greentoyellow: #123236;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-textwhite: #ffffff;
+    --color-textgreen: #07181b;
+    --color-textblack: #ffffff;
+    --figi-green: #123236;
+    --figi-beige: #1a474d;
+    --figi-white: #1a474d;
+    --greentowhite: #ffffff;
+    --hover-greentoyellow: #ccff00;
+  }
+}
+
+body.kerstActive {
+  --color-textwhite: #FFF9F1;
+  --color-textgreen: #0B3A2E;
+  --color-textblack: #0A1416;
+  --figi-green: #0B3A2E;
+  --figi-white: hwb(0 16% 22%);
+  --figi-beige: #ebe1e1;
+  --hover-greentoyellow: #F5C84C;
+}
+
+:root {
+  --whitespace: clamp(1.25em, 5vw, 2em);
+}
+
+body {
+  background-color: var(--figi-white);
+  margin: 0;
+  font-family: "GTWalsheimPro";
+}
+
+h1,h2,h3,h4 {
+  font-weight: 400;
+  color: var(--color-textwhite);
+}
+
+a:focus {
+  outline: 0.15em solid yellow;
+  border-radius: 0.25em;
+}
+
+button:focus {
+  outline: 0.15em solid rgb(255, 157, 0);
+  border-radius: 0.25em;
+}
+
+img:focus {
+  outline: 0.15em solid rgb(255, 38, 0);
+  border-radius: 0.25em;
+}
+
+/* Header*/
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  position: sticky;
+  top: -2em;
+  z-index: 50;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Header - Top Bar*/
+header>section:nth-of-type(1) {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  display: grid;
+  background-color: var(--figi-green);
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  padding: 0.5em 1em;
+}
+
+header>section:nth-of-type(1)>ul {
+  grid-column: 2;
+  display: grid;
+  gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+}
+
+header>section:nth-of-type(1) a {
+  color: var(--color-textwhite);
+  text-decoration: none;
+  font-size: 0.9em;
+  border-right: 0.0625em solid #a6a6a6;
+  padding-right: 1em;
+}
+
+/* Nav Bar Image*/
+header a img {
+  position: absolute;
+  top: 1.5em;
+  left: 3em;
+  height: 5.125em;
+}
+
+@media (max-width: 395px) {
+  header > section:first-of-type > ul > li:not(:nth-child(2)) {
+    display: none;
+  }
+
+  header a img {
+    position: absolute;
+    top: 1.2em;
+    left: 3.2em;
+    height: 5.125em;
+  }
+}
+
+/* Header - NavBar*/
+header>section:nth-of-type(2) {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  display: grid;
+  align-items: center;
+  height: 4.1em;
+  background-color: var(--figi-white);
+}
+
+header>section:nth-of-type(2) nav {
+  display: none;
+  gap: 1rem;
+  background-color: var(--figi-white);
+  width: 100%;
+  height: 25em;
+  padding-top: 7.5em;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+}
+
+#hamburgerMenuIcon {/* Bronnen-Header*//*1.2*/
+  grid-column-start: 4;
+  grid-row-start: 2;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  align-self: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+
+#hamburgerMenuIcon span {
+  display: block;
+  width: 2rem;
+  background-color: #2A2A29;
+  height: .3rem;
+  border-radius: 999rem;
+  transition: transform .3s ease opacity .1s;
+}
+
+header>section:nth-of-type(2) nav[open="true"] {/* Bronnen-Header*//*1.1*/
+  display: block;
+}
+#hamburgerMenuIcon.transform span:nth-child(1) {
+  transform: translateY(0.45rem) rotate(45deg);
+}
+#hamburgerMenuIcon.transform span:nth-child(2) {
+  display: none;
+}
+#hamburgerMenuIcon.transform span:nth-child(3) {
+  transform: translateY(-0.45rem) rotate(-45deg);
+}
+
+header>section:nth-of-type(2) nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+header>section:nth-of-type(2) nav a {
+  text-decoration: none;
+  color: var(--color-textblack);
+  text-transform: uppercase;
+  font-size: 1em;
+  border-bottom: 0.0625em solid #a6a6a6;
+  padding-bottom: 0.5em;
+}
+
+header>section:nth-of-type(2) nav a:hover {
+  color: var(--hover-greentoyellow);
+}
+
+@media (min-width: 1090px) {
+  #hamburgerMenuIcon {
+    display: none;
+  }
+
+  header>section:nth-of-type(2) nav {
+    display: block;
+    height: 100%;
+    padding-top: 0.5em;
+  }
+
+  header>section:nth-of-type(2) nav>ul {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+  }
+
+  header>section:nth-of-type(2) nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-bottom: 0;
+    border-right: 0.1em solid #a6a6a6;
+    padding-right: 2em;
+    padding-bottom: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  header a img {
+    content: url("../images/logo_white.png"); /* Bronnen-Header*//*1.3*/
+  }
+
+  #hamburgerMenuIcon>span {
+    background-color: var(--color-textwhite);
+  }
+}
+
+/* Kerst - Garland*/
+header>img:last-of-type {
+  opacity: 0; /* Bronnen-Header*//*1.4*/
+  position: absolute;
+  left: 1em;
+  top: 5em;
+  height: 5em;
+  width: 10em;
+  transition: opacity .3s ease;
+}
+
+body.kerstActive header>img:last-of-type {
+  opacity: 1;
+}
+
+@media (max-width: 395px) {
+  header>img:last-of-type {
+    position: absolute;
+    top: 4em;
+    left: 1em;
+    height: 5.125em;
+  }
+}
+
+
+
+
+
+
+/* Footer*/
+footer {
+  background-color: var(--figi-green);
+  color: var(--color-textwhite);
+  display: grid;
+  grid-auto-flow: row;
+
+}
+
+footer h2 {
+  justify-content: center;
+  text-transform: uppercase;
+  padding-top: 0em;
+  letter-spacing: 0.08em;
+  font-size: 2em;
+  color: var(--color-textwhite);
+  font-weight: 700;
+  padding-bottom: 0em;
+}
+
+footer h3 {
+  justify-content: center;
+  text-transform: uppercase;
+  padding-top: 0em;
+  letter-spacing: 0.08em;
+  font-size: 1em;
+  color: var(--color-textwhite);
+  font-weight: bold;
+  padding-bottom: 0em;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--color-textwhite);
+}
+
+footer>section:nth-of-type(1) {
+  grid-row: 1;
+  display: grid;
+  row-gap: 1em;
+  padding-left: 1rem;
+}
+
+footer>section:nth-of-type(1)>section:nth-of-type(1) {
+  grid-row: 1;
+}
+
+footer>section:nth-of-type(1)>section:nth-of-type(2) {
+  grid-row: 2;
+}
+
+footer>section:nth-of-type(1)>section:nth-of-type(3) {
+  grid-row: 3;
+}
+
+footer>section:nth-of-type(1)>ul {
+  grid-row: 4;
+  display: flex;
+  list-style: "";
+  justify-items: left;
+  padding: 0;
+
+}
+
+footer>section:nth-of-type(1) ul li {
+  padding: 0.5em;
+  margin: 0.5em;
+  background-color: var(--color-textwhite);
+  border-radius: 50%;
+}
+
+footer>section:nth-of-type(1) ul li a img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+footer>section:last-of-type>ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer>section:last-of-type>ul li {
+  padding: 0.5em;
+}
+
+footer>section:nth-of-type(2) ul {
+  list-style-type: none;
+}
+
+footer>section:nth-of-type(2) ul a {
+  font-size: 1em;
+}
+footer>section:nth-of-type(3) h3{
+  padding-left: 1em;
+}
+footer>section:nth-of-type(3)>form {
+  padding-left: 1em;
+  grid-row: 3;
+  display: grid;
+}
+
+footer>section:nth-of-type(3)>form>label {
+  margin: 0;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-textwhite);
+}
+
+footer>section:nth-of-type(3)>form>input {
+  height: 2.8em;
+  padding: 0 0.8em;
+  margin-bottom: 2em;
+  width: 90%;
+  background-color: var(--color-textwhite);
+}
+
+footer>section:nth-of-type(3)>form>label:nth-of-type(1) {
+  grid-row: 1;
+}
+
+footer>section:nth-of-type(3)>form>input:nth-of-type(1) {
+  grid-row: 2;
+}
+
+footer>section:nth-of-type(3)>form label:nth-of-type(2) {
+  grid-row: 3;
+}
+
+footer>section:nth-of-type(3)>form input:nth-of-type(2) {
+  grid-row: 4;
+}
+
+footer>section:nth-of-type(3)>form label:nth-of-type(3) {
+  grid-row: 5;
+}
+
+footer>section:nth-of-type(3)>form input:nth-of-type(3) {
+  grid-row: 6;
+}
+
+footer>section:nth-of-type(3)>form button:nth-of-type(1) {
+  grid-row: 7;
+}
+
+footer>section:nth-of-type(3)>form>button {
+  grid-column: 1 / -1;
+  margin-top: 1.2em;
+  padding: 0.9em 2.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  width: 10em;
+  background-color: rgb(160, 209, 193);
+  color: var(--figi-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  footer {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 2.5fr;
+    grid-auto-flow: column;
+    column-gap: 1em;
+
+  }
+
+  footer>section:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  footer>section:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+  }
+
+  footer>section:nth-of-type(3) {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: start;
+    justify-self: start;
+  }
+
+  footer>section:nth-of-type(3)>form {
+    
+    width: 100%;
+    grid-row: auto;
+  }
+
+  footer>section:nth-of-type(3)>form input {
+    width: 30em;
+  }
+
+  footer>section:nth-of-type(2) ul {
+    padding-top: 2em;
+    padding: 0;
+  }
+
+  footer>section:nth-of-type(2) ul li {
+    padding-top: 1em;
+  }
+
+  footer>section:nth-of-type(2) ul li a {
+    font-weight: bold;
+
+  }
+}
+
+footer>ul:last-of-type {
+  grid-column: 1 / -1;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  padding: 1.5em 0;
+  background-color: var(--figi-white);
+  list-style: none;
+}
+
+footer>ul:last-of-type a {
+  color: var(--color-textblack);
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+
+
+
+.skip { /* Bronnen-Header*//*1.1*/
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+
+
+/*Bronnen*/
+
+/* Bronnen-Body
+-1.1(Hoe je een Woff2 font moet toevoegen): @font-Face: https://stackoverflow.com/questions/69267704/how-to-import-at-woff2-font-and-use-it-in-a-sass-setting
+*/
+
+/* Bronnen- Header
+-1.1(Hamburger menu maken): Ik heb hulp gekregen van Ronald om dit te maken. Maar ik ging the header verder stylen.
+
+-1.2(Hamburger menu sluit button): Ik moest hiervoor een klasse gebruiken.
+ De knop staat buiten de navigatiesectie. Hij wordt ook gepositioneerd door het grids.
+  Dit is de makkelijkste manier waarop ik het kon doen. Ik heb dit met de hulp van AI gebruikt om te positioneren van de X icon.
+   De voorbeeld dat in de CodePen
+  staat houdt darkmode niet in de gaten.
+
+-1.3(Content veranderen): Ik wist niet hoe ik de afbeelding kon veranderen zonder hem te vervangen.
+Dus vroeg ik AI hoe ik de inhoud kon vervangen zonder de achtergrond te vervangen.
+
+-1.4(Alternatief voor display:none):Ik heb geprobeerd een manier te vinden om niet elke keer 'display none' te gebruiken. 
+Ik zag dat we 'Opacity 0' kunnen gebruiken.https://stackoverflow.com/questions/15855826/css-alternatives-to-style-displaynone
+*/
+
+/* Bronnen-Header
+-1.1(Skip Link)Ik wilde een skiplink toevoegen, ik vond een voorbeeld en een voorbeeldvideo:
+https://www.w3schools.com/accessibility/accessibility_skip_links.php
+https://www.youtube.com/shorts/a-0HnL33-bY

@@ -1,0 +1,593 @@
+/* Main-Hero*/
+main>section:nth-of-type(1) {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 1.5em;
+    justify-items: center;
+    padding: 35vh 2vw;
+    color: var(--figi-white);
+    overflow: hidden;/*Main-Hero*//*1.1*/
+    background-image: url("../images/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main>section:nth-of-type(1)>h1 {
+    margin: 0;
+    font-size: 2.6em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.05em black;
+    text-align: center;
+}
+
+main>section:nth-of-type(1)>a {
+    max-width: 100%;
+    width: clamp(13.125rem, 24.699vw + 9.111rem, 38.75rem);/*Main-Hero*//*1.2*/
+    padding: 1em 2.2em;
+    background-color: var(--figi-white);
+    color: var(--color-textgreen);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 0.12em 1em rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+main>section:nth-of-type(1)>a:hover {
+    background-color: var(--figi-green);
+    color: var(--color-textwhite);
+}
+
+@media (prefers-reduced-motion: no-preference) {/*Main-Hero*//*1.1.1*/
+    main>section:nth-of-type(1)>video {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    main>section:nth-of-type(1) {
+        background: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    main>section:nth-of-type(1)>a {
+        background-color: var(--color-textwhite);
+        color: var(--color-textgreen);
+    }
+
+    main>section:nth-of-type(1)>a:hover {
+        background-color: var(--color-textgreen);
+        color: var(--color-textwhite);
+    }
+}
+
+
+/* Main-Ervaar het in Figi*/
+main>section:nth-of-type(2) {
+    padding: 2em;
+    background-color: var(--figi-white);
+}
+
+body.kerstActive main>section:nth-of-type(2) {
+    background-color: var(--figi-beige);
+    background-image: url("../images/snowgif.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main>section:nth-of-type(2)>h2 {/*Main-Ervaar het in Figi**//*1.1*/
+    text-align: center;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--greentowhite);
+    font-weight: 700;
+    margin: 0.5em;
+}
+
+main>section:nth-of-type(2)>p {
+    margin: 0 0 2.5em;
+    text-align: center;
+    color: var(--greentowhite);
+    padding: 0;
+    line-height: 1.7;
+    font-weight: 00;
+}
+
+main>section:nth-of-type(2)>ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+    gap: 2em 3em;
+}
+
+main>section:nth-of-type(2)>ul>li {
+    background-color: #000;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    clip-path: polygon(0 0,
+            calc(50% - .75em) 0,
+            50% 1em,
+            calc(50% + .75em) 0,
+            100% 0,
+            100% 100%,
+            0 100%,
+            0 0);
+}
+
+main>section:nth-of-type(2)>ul>li>a {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    z-index: 1;
+    background-color: rgb(0 0 0 / .35);
+    border: 0.12em solid var(--figi-white);
+    width: 80%;
+    max-width: 20em;
+    padding: 0.2em 2.5em;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.4);
+    transition: background-color 0.5s ease;
+}
+
+main>section:nth-of-type(2)>ul>li>a:hover {
+    background-color: yellow;
+    color: var(--color-textgreen);
+}
+
+main>section:nth-of-type(2)>ul>li>img {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main>section:nth-of-type(2)>ul>li:hover img {
+    filter: brightness(0.5);/*Main-Ervaar het in Figi*//*1.2*/
+    transition: filter 0.4s ease;
+}
+
+@media (max-width: 600px) {
+    main>section:nth-of-type(2) {
+        padding: 2em;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body.kerstActive main>section:nth-of-type(2) {
+        background-image: url("../images/snowdark.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body.kerstActive main>section:nth-of-type(2) {
+        background-image: url("../images/snowstatic.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/*Main-Plan je verblijf*/
+
+main>section:nth-of-type(3) {
+    display: grid;
+    column-gap: 4em;
+    gap: 2.5em;
+    padding: 3em 3em;
+    background-color: var(--figi-green);
+}
+
+body.kerstActive main>section:nth-of-type(3) {
+    background-image: url("../images/star.png");
+    background-size: 7em auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+}
+
+main>section:nth-of-type(3)>h2 {
+    grid-column: 1 / -1;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-top: 0em;
+    letter-spacing: 0.08em;
+    font-size: 2em;
+    color: var(--color-textwhite);
+    font-weight: 700;
+}
+
+body.kerstActive main>section:nth-of-type(3)>h2 {
+    padding-top: 2em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.kerstActive main>section:nth-of-type(3) {
+        animation: starGlow 3s ease-in-out infinite;/*Main-Plan je verblijf*//*1.1*/
+    }
+
+    @keyframes starGlow {
+        0% {
+            filter: brightness(1) drop-shadow(0 0 0px #fff);/*Main-Plan je verblijf*//*1.2*/
+        }
+
+        50% {
+            filter: brightness(1.4) drop-shadow(0 0 20px #fdf6e3);
+        }
+
+        100% {
+            filter: brightness(1) drop-shadow(0 0 0px #fff);
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    body.kerstActive main>section:nth-of-type(3) {
+        background-image: url("../images/star.png");
+        background-size: 17em auto;
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+}
+
+/*Main-Plan je verblijf- Boek een Kamer*/
+main>section:nth-of-type(3)>section:nth-of-type(1)>h3 {
+    grid-row: 1;
+    font-weight: 700;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-textwhite);
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(1)>form {
+    grid-row: 2;
+    display: grid;
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(1)>form>label {
+    margin: 0;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-textwhite);
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(1)>form>input {
+    height: 2.8em;
+    padding: 0 0.8em;
+    margin-bottom: 2em;
+    background-color: var(--color-textwhite);
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(1)>form>label:nth-of-type(1) {
+    grid-row: 1;
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(1)>form>input:nth-of-type(1) {
+    grid-row: 2;
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(1)>form label:nth-of-type(2) {
+    grid-row: 3;
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(1)>form input:nth-of-type(2) {
+    grid-row: 4;
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(1)>form button:nth-of-type(1) {
+    grid-row: 5;
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(1)>form>button {
+    grid-column: 1 / -1;
+    margin-top: 1.2em;
+    padding: 0.9em 2.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    width: 10em;
+    background-color: mediumaquamarine;
+    color: var(--figi-white);
+
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(1)>form>button:hover {
+    background-color: #081618;
+    color: var(--color-textwhite);
+    transition: ease 0.5s;
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(2)>h3 {
+    font-weight: 700;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-textwhite);
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(2) ul {
+    padding: 0;
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(2) li {
+    list-style: none;
+    padding-bottom: 3em;
+}
+
+main>section:nth-of-type(3)>section:nth-of-type(2) p {
+    font-size: 1em;
+    letter-spacing: 0.06em;
+    color: var(--color-textwhite);
+}
+
+
+
+@media (min-width: 710px) {
+    main>section:nth-of-type(3) {
+        grid-template-columns: 2fr 2fr;
+
+    }
+    main>section:nth-of-type(3)>section:nth-of-type(1)>h3 {
+        grid-column: 1;
+    }
+    main>section:nth-of-type(3)>section:nth-of-type(2) ul {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+        margin: 0em;
+        width: 80%;
+        anchor-name: --carousel;
+        scroll-marker-group: after;
+        &::scroll-marker-group {
+            position: fixed;
+            position-anchor: --carousel;
+            position-area: block-end;
+            position-visibility: always;
+            display: flex;
+            gap: 1.2em;
+            background-color: silver;
+            padding: .5em;
+            border-radius: 3em;
+        }
+        li {
+            &::scroll-marker {
+                content: '' / attr(data-label);
+                width: 1em;
+                height: 1em;
+                background-color: var(--figi-green);
+                border-radius: 50%;
+            }
+            &::scroll-marker:target-current {
+                background-color: green;
+            }
+        }
+    }
+
+    main>section:nth-of-type(3)>section:nth-of-type(2) li {
+        flex-basis: 100%;
+        flex-shrink: 0;
+        width: 100%;
+        display: block;
+    }
+
+    main>section:nth-of-type(3)>section:nth-of-type(2) p {
+        color: var(--color-textwhite);
+        font-weight: 300;
+        font-style: italic;
+        font-size: 1.1em;
+        padding: 0em 0em 3em 2em;
+    }
+}
+
+/*Main-Ervaar de smaak van Figi*/
+main>section:nth-of-type(4) {
+    padding-bottom: 2em;
+}
+
+body.kerstActive section:nth-of-type(4) {
+    background-image: url("../images/kerstachtergrond.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+main>section:nth-of-type(4) ul {
+    grid-row: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 2em auto 0 auto;
+    width: 80%;
+    max-width: 60rem;
+    scroll-snap-type: x mandatory;
+
+    anchor-name: --carousel-figi-menu;
+    scroll-marker-group: after;
+}
+
+main>section:nth-of-type(4) ul::-webkit-scrollbar {
+    display: none;
+}
+
+main>section:nth-of-type(4) ul::scroll-marker-group {
+    position: fixed;
+    position-anchor: --carousel-figi-menu;
+    position-area: block-end;
+    position-visibility: always;
+    display: flex;
+    gap: 1.2em;
+    background-color: silver;
+    padding: .5em;
+    border-radius: 3em;
+}
+
+main>section:nth-of-type(4) ul li::scroll-marker {
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: var(--figi-green);
+    border-radius: 50%;
+}
+
+main>section:nth-of-type(4) ul li::scroll-marker:target-current {
+    background-color: green;
+}
+
+main>section:nth-of-type(4) ul li {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    flex-basis: 100%;
+    flex-shrink: 0;
+    width: 100%;
+    scroll-snap-align: center;
+    background-image: url("../images/plate.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main>section:nth-of-type(4) ul li>p {
+    color: var(--color-textgreen);
+}
+
+main>section:nth-of-type(4) ul li img {
+    grid-row: 1;
+    margin-top: 2em;
+    width: clamp(12rem, 20vw, 24rem);
+    height: auto;
+    object-fit: cover;
+}
+
+main>section:nth-of-type(4) ul li h3 {
+    grid-row: 2;
+    color: var(--color-textgreen);
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+main>section:nth-of-type(4) ul li p {
+    grid-row: 3;
+    padding: 0 3em;
+}
+
+main>section:nth-of-type(4) h2 {
+    padding-top: 2em;
+    grid-row: 2;
+    text-align: center;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--greentowhite);
+    font-weight: 700;
+    margin: 0.5em;
+}
+
+main>section:nth-of-type(4) p {
+    grid-row: 3;
+    margin: 0 0 2.5em;
+    text-align: center;
+    color: var(--greentowhite);
+    padding: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+main>section:nth-of-type(4) a {
+    grid-row: 4;
+    margin: 1.2em auto 0 auto;
+    padding: 0.9em 2.4em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--color-textgreen);
+    color: var(--color-textwhite);
+    display: block;
+    width: clamp(13.125rem, 24.699vw + 9.111rem, 38.75rem);
+}
+
+
+/*Main-Boek een kamer button*/
+#helpButton {
+  position: fixed;
+  right: var(--whitespace);
+  bottom: var(--whitespace);
+  z-index: 10;
+  padding: 2em 2em;
+  color: var(--figi-green);
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid #d6d6d6;
+  border-radius: 0.55em;
+
+
+}
+
+#helpButton:hover {
+  background: #f7f7f7;
+  border-color: #c8c8c8;
+}
+
+#helpDialog {
+  position: fixed;
+  right: var(--whitespace);
+  bottom: var(--whitespace);
+  left: auto;
+  z-index: 2;
+}
+
+
+
+/*Bronnen*/
+
+/* Main-Hero
+-1.1 + 1.1.1 (Video hidden):De docent heeft me geholpen met het toevoegen van de Verborgen optie.
+-1.2(Clamp generator voor video ): https://clamp-generator.netlify.app/ Ik heb de klemgenerator 
+gebruikt om de video groter te maken naarmate het scherm groter wordt.
+
+Main-Ervaar het in Figi
+-1.1 (Image cutouts):De docent heeft me geholpen. 
+-1.2 (Filter):https://www.w3schools.com/cssref/css3_pr_filter.php Filter greyscale
+
+Main-Plan je verblijf
+-1.1(Animatie): Ik heb de voorbeeldcode uit de les gebruikt voor de animaties.
+ De animatie werd maar één keer afgespeeld, dus ik moest AI vragen hoe ik dit oneindig(Infinite) kon maken.
+-1.2(Brightness):Ik heb ook gezocht naar hoe ik de helderheid kon inschakelen.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/brightness
+
+Main-Boek een kamer button
+-1.1 Code van Codepen gebruikt:https://codepen.io/shooft/pen/vENrZvj
+  */
