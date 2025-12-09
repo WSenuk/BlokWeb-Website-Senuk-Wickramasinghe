@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Senuk">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Figi-Home</title>
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/indexstyle.css" rel="stylesheet">
+  <script src="scripts/script.js" defer></script>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+
+<body>
+  <header>
+    <section><!--1.1 Opmerking-->
+      <ul><!--1.2 Opmerking-->
+        <li><a href="#boek" class="skip">Boek een Kamer</a></li><!--1.1-->
+        <li><button aria-label="Kerst thema aanzetten">Zin in Kerst?</button></li>
+        <li><a aria-label="Figi nummer" href="tel:+31306927400">+31 30 69 27 400</a></li><!--1.2-->
+        <li><a aria-label="Figi email address" href="mailto:info@figi.nlText">info@figi.nl</a></li>
+      </ul>
+    </section>
+    <section>
+      <nav open="false"> <!--1.3-->
+        <ul>
+          <li><a aria-label="Link om een hotel te boeken" href="">Hotel ▸</a></li>
+          <li><a aria-label="Link om ruimte te huren voor meetings en Events" href="">Meetings en Events ▸</a></li>
+          <li><a aria-label="Link naar onze Cafe menu" href="">Grand Cafe ▸</a></li>
+          <li><a aria-label="Link naar onze Theater" href="">Theater ▸</a></li>
+          <li><a aria-label="Link naar onze Bioscoop, kaartjes halen" href="">Bioscoop ▸</a></li>
+          <li><a aria-label="Link om meer te weten over Figi" href="overfigi.html">Over FIGI ▸</a></li>
+          <li><a aria-label="Link naar onze contact pagina" href="">Contact ▸</a></li>
+        </ul>
+      </nav>
+    </section>
+    <button aria-label="Menu" id="hamburgerMenuIcon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="index.html"><img src="images/logo.png" alt="Figi logo,Home Page link"></a>
+    <img src="images/garland.png">
+  </header>
+  <main>
+    <section>
+      <h1>Ruime kamers en suites</h1>
+      <video autoplay muted loop playsinline hidden><!--1.4-->
+        <source src="/videos/hero.mp4" type="video/mp4" alt="Video over onze bedrijf">
+      </video>
+      <a aria-label="Boek een kamer in Figi" href="">Boek een hotelkamer in Zeist</a>
+    </section>
+    <section>
+      <h2>Ervaar het in Figi</h2>
+      <p>
+        FIGI biedt een breed scala aan culturele, culinaire, congres- en
+        overnachtingsfaciliteiten. Onder één dak zit een hotel, restaurant,
+        talrijke vergader- en congreszalen, bioscoop en theater.
+      </p>
+      <ul>
+        <li>
+          <a aria-label="Reserveer een tafel bij ons restaurant" href="">Reserveer een tafel</a>
+          <img src="images/cardtafel.jpg" alt="Reserveer een tafel in het Grand Café">
+        </li>
+        <li>
+          <a aria-label="Boek een kamer bij Figi" href="">Boek een kamer</a>
+          <img src="images/cardkamer.jpg" alt="Hotelkamer in Figi">
+        </li>
+        <li>
+          <a aria-label="Kies een film bij onze bioscoop" href="">Kies een film</a>
+          <img src="images/cardfilm.png" alt="Bioscoopstoelen in Figi">
+        </li>
+        <li>
+          <a aria-label="Bekijk theater voorstellingen" href="">Theater Voorstellingen</a>
+          <img src="images/cardtheater.jpg" alt="Theaterzaal bij Figi">
+        </li>
+        <li>
+          <a aria-label="Meer informatie over Meetings en Events" href="">Meetings en Events</a>
+          <img src="images/cardmeetings.jpg" alt="Meetings en evenementenruimte">
+        </li>
+        <li>
+          <a aria-label="Bekijk vacatures en werken bij Figi" href="">Werken bij Figi</a>
+          <img src="images/cardwerk.jpg" alt="Werken bij Figi">
+        </li>
+        <li>
+          <a aria-label="Lees meer over het familiebedrijf Figi" href="">Familiebedrijf Figi</a>
+          <img src="images/cardfamilie.jpg" alt="Geschiedenis van Figi">
+        </li>
+        <li>
+          <a aria-label="Bekijk onze bereikbaarheid" href="">Bereikbaarheid</a>
+          <img src="images/cardbereikbaarheid.jpg" alt="Gebouw van Figi">
+        </li>
+      </ul>
+    </section>
+    <section id="boek"><!--1.1-->
+      <h2>Plan je verblijf</h2>
+      <section>
+        <h3>Boek een kamer</h3>
+        <form>
+          <label for="arrival">Datum aankomst</label><!--1.5-->
+          <input type="date" id="arrival" name="arrival">
+          <label for="departure">Datum vertrek</label>
+          <input type="date" id="departure" name="departure">
+          <button type="submit">Zoek kamers</button>
+        </form>
+      </section>
+      <section>
+        <h3>Hotel Reviews</h3>
+        <ul>
+          <li>
+            <p> Prima verblijf na aanleiding van een bruiloft in slot Zeist. Lekkere geslapen, prima bedden,
+              schone kamers en erg uitgebreid ontbijt.
+              Het personeel was erg vriendelijk en behulpzaam. Een echte aanrader.</p>
+            <p>Anita V.</p>
+          </li>
+          <li>
+            <p> We waren in coronatijd ook al eens geweest.
+              Maar het was thuiskomen voor ons. Vriendelijk personeel, perfecte locatie om in de buurt wat te gaan
+              ondernemen.
+              mooie kamers,kortom, wij zijn fan van het hotel en gaan zeker nog een keer terugkomen</p>
+            <p>Fiona J.</p>
+          <li>
+            <p> Prachtige omgeving om te fietsen. Heerlijke bedden, prima ontbijt en gastvrij personeel.
+              Ook heel leuk: de bioscoop is vanuit het hotel binnendoor te bereiken en je krijgt nog eens 3,50 korting
+              op
+              je bioscoopkaartje. Vorig jaar ook al geweest en volgend jaar gaan we weer.</p>
+            <p>Sjoerd V.</p>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <section>
+      <ul>
+        <li>
+          <img src="images/1.png" alt="Tonijn Tataki"><!--1.3 Opmerking-->
+          <h3>Tonijn Tataki met Komkommerlinten</h3>
+          <p>
+            Licht geschroeide tonijn, omhuld met geroosterde sesam,
+            geserveerd op een frisse salade van komkommerlinten.
+            Afgewerkt met krokante accenten en een zacht citrus-aroma voor een verfijnde,
+            lichte smaakbeleving.
+          </p>
+        </li>
+        <li>
+          <img src="images/2.png" alt="Bietensalade">
+          <h3>Kleurrijke Bietensalade met Walnoot & Pistache</h3>
+          <p>
+            Een levendige mix van rode en gele biet, gecombineerd met jonge bladgroenten.
+            Verrijkt met geroosterde walnoten, pistache en een frisse vinaigrette
+            voor een knapperige en smaakvolle sensatie.
+          </p>
+        </li>
+        <li>
+          <img src="images/31.jpg" alt="Patisserie selectie">
+          <h3>Huisgemaakte Patisserie Selectie</h3>
+          <p>
+            Een assortiment van ambachtelijke patisserie, waaronder luchtige cakejes,
+            verfijnde koekjes en romige zoetigheden. Ideaal voor bij de koffie
+            of als elegante afsluiting van de maaltijd.
+          </p>
+        </li>
+        <li>
+          <img src="images/39.jpg" alt="Gerookte zalm met kruiden">
+          <h3>Gerookte Zalm met Kruidentopping</h3>
+          <p>
+            Zachte zalm met een krokante kruidenkorst, geserveerd met frisse komkommer
+            en lichte citrustonen. Een elegante en verfijnde klassieker met moderne twist.
+          </p>
+        </li>
+        <li>
+          <img src="images/40.jpg" alt="Seafood Boil">
+          <h3>Seafood Boil Deluxe</h3>
+          <p>
+            Een royale selectie van schaal- en schelpdieren, gecombineerd met groenten
+            en een krachtige, boterige kruidensaus. Perfect voor liefhebbers van rijke,
+            hartige smaken uit de zee.
+          </p>
+        </li>
+        <li>
+          <img src="images/41.jpg" alt="Koningsdiner">
+          <h3>Koningsdiner Plateau</h3>
+          <p>
+            Een luxe plateau met een variatie van vleeswaren, kazen, dips en brood.
+            Verrijkt met delicate garnituren voor een royale en feestelijke tafelervaring.
+          </p>
+        </li>
+        <li>
+          <img src="images/42.jpg" alt="Ontbijt bord">
+          <h3>Ontbijtplateau met Koffie & Gebak</h3>
+          <p>
+            Een uitnodigend ontbijt met vers gebak, romige cappuccino,
+            en een selectie zoete lekkernijen. De perfecte start van een ontspannen dag.
+          </p>
+        </li>
+      </ul>
+      <h2>Ervaar de pure smaak van FIGI</h2>
+      <p>Reserveer eenvoudig online een tafel voor een diner of feestje. Bellen kan natuurlijk ook op 030 692 74 00.</p>
+      <a aria-label="Reserveer een tafel" href="">Reserveer je Tafel</a>
+    </section>
+    <button id="helpButton">Boek een Kamer</button><!--1.6-->
+    <dialog id="helpDialog">
+    </dialog>
+  </main>
+  <footer>
+    <section>
+      <section>
+        <h2>Figi</h2>
+        <p>Het Rond 2, 3701 HS Zeist </p>
+        <p>030 692 74 00 - <a href="mailto:info@figi.nl">info@figi.nl</a></p>
+      </section>
+      <section>
+        <h3>Bioscoop en Theater</h3>
+        <p>0900 9203 - <a href="mailto:info@ntk.nl">info@ntk.nl</a></p>
+        <p>(bereikbaar van 10:00 tot 20:00 uur)</p>
+      </section>
+      <section>
+        <h3>Meetings en Events</h3>
+        <p>030 692 74 00 - <a href="mailto:sales@figi.nl">sales@figi.nl</a>
+        </p>
+      </section>
+      <ul>
+        <li>
+          <a href="#" aria-label="Link naar onze Facebook">
+            <img src="images/facebook.svg" alt="Facebook icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Link naar onze Twitter">
+            <img src="images/x.svg" alt="Twitter/X icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Link naar onze LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Link naar onze Instagram">
+            <img src="images/instagram.svg" alt="Instagram icon">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul>
+        <li><a aria-label="Link om een hotel te boeken" href="">Hotelkamer boeken</a></li>
+        <li><a aria-label="Link om ruimte te huren voor meetings en Events" href="">Meetings en Events organiseren</a>
+        </li>
+        <li><a aria-label="Link naar onze Cafe menu" href="">Tafel reserveren</a></li>
+        <li><a aria-label="Link naar onze Theater" href="">Naar het Theater</a></li>
+        <li><a aria-label="Link naar onze Bioscoop, kaartjes halen" href="">Naar de Bioscoop</a></li>
+        <li><a aria-label="Link om werk te vinden bij Figi" href="">Werken bij Figi</a></li>
+        <li><a aria-label="Link om meer te weten over onze TheaterTechnieken" href="">Theatertechniek</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Aanmelden nieuwsbrief</h3>
+      <form>
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+        <label for="voornaam">Voornaam</label>
+        <input type="text" id="voornaam" name="voornaam">
+        <label for="achternaam">Achternaam</label>
+        <input type="text" id="achternaam" name="achternaam">
+        <button type="submit">Aanmelden</button>
+      </form>
+    </section>
+    <ul>
+      <li><a href="">© 2025 Hotel Theater Figi</a></li>
+      <li><a href="">Cookies</a></li>
+      <li><a href="">Privacyverklaring</a></li>
+      <li><a href="">English</a></li>
+    </ul>
+  </footer>
+
+
+  <!--Bronnen-->
+  <!--
+-1.1(Skip Link)Ik wilde een skiplink toevoegen, ik vond een voorbeeld en een voorbeeldvideo:
+https://www.w3schools.com/accessibility/accessibility_skip_links.php
+https://www.youtube.com/shorts/a-0HnL33-bY
+-1.2(Hoe je een aria label moet toevoegen en waar): https://www.quora.com/How-do-you-add-alt-tags-to-links
+-1.3(Hulp van Ronald gekregen om de Hamburger menu te maken)
+-1.4(Video + Video Hidden): De docent heeft me geholpen met het toevoegen van de Verborgen optie.
+ De rest van de code komt uit:https://www.w3schools.com/html/html5_video.asp HTML <video> Autoplay
+-1.5(De docent raadde me aan om invoer te gebruiken om de data toe te voegen.
+ De student-assistenten vertelden me dat ik labels moest gebruiken. Ik zocht uit hoe ik dat moest doen.)
+ https://www.w3schools.com/W3CSS/w3css_input.asp
+-1.6(Boek een kamer button): Voorbeeld code van codepen: https://codepen.io/shooft/pen/vENrZvj
+-->
+
+  <!--Opmerkingen-->
+  <!--
+-1.1(Section maar geen header)Ik heb de leraar hierover gevraagd en hij zei dat het goed was, 
+omdat ik de sectie gebruik om er een raster van te maken.
+-1.2(Ul oproepen)Dit waren de beginfases van mijn codering. Ik wist niet hoe ik de UL-sectie moest aanroepen,
+ maar ik heb de sectie in CSS aangeroepen. In de onderstaande code heb ik de ul-sectie aangeroepen in plaats van de sectie.
+-1.3(Geen header na section)Ik heb een afbeelding na de sectie toegevoegd. Het zou een H3 moeten zijn. Maar de afbeelding heeft al een alt-teken,
+ zodat de schermlezer het kan lezen. Dit is ook de grid volgorde.
+-->
