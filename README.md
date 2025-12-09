@@ -304,10 +304,13 @@ Deze keer heb ik de test alleen gedaan. Mijn code is nog niet helemaal af en ik 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+-Remove get element by ID, replace document.queryselector
+-Start with video that has no animation.
+-Sections need to start with an Heading
+-Images need to be under the links
+-Add skip Link
+-Add a focus state, you can call all a,images,buttons on top
+-Add an active state 
 
 </details>
 
@@ -344,13 +347,76 @@ Deze keer heb ik de test alleen gedaan. Mijn code is nog niet helemaal af en ik 
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
+  
+CSS-Styles:
+Bronnen-Body
+-1.1(Hoe je een Woff2 font moet toevoegen): @font-Face: https://stackoverflow.com/questions/69267704/how-to-import-at-woff2-font-and-use-it-in-a-sass-setting
+ Bronnen- Header
+-1.1(Hamburger menu maken): Ik heb hulp gekregen van Ronald om dit te maken. Maar ik ging the header verder stylen.
+-1.2(Hamburger menu sluit button): Ik moest hiervoor een klasse gebruiken.
+ De knop staat buiten de navigatiesectie. Hij wordt ook gepositioneerd door het grids.
+  Dit is de makkelijkste manier waarop ik het kon doen. Ik heb dit met de hulp van AI gebruikt om te positioneren van de X icon.
+   De voorbeeld dat in de CodePen
+  staat houdt darkmode niet in de gaten.
+-1.3(Content veranderen): Ik wist niet hoe ik de afbeelding kon veranderen zonder hem te vervangen.
+Dus vroeg ik AI hoe ik de inhoud kon vervangen zonder de achtergrond te vervangen.
+-1.4(Alternatief voor display:none):Ik heb geprobeerd een manier te vinden om niet elke keer 'display none' te gebruiken. 
+Ik zag dat we 'Opacity 0' kunnen gebruiken.https://stackoverflow.com/questions/15855826/css-alternatives-to-style-displaynone
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
+ Bronnen-Header
+-1.1(Skip Link)Ik wilde een skiplink toevoegen, ik vond een voorbeeld en een voorbeeldvideo:
+https://www.w3schools.com/accessibility/accessibility_skip_links.php
+https://www.youtube.com/shorts/a-0HnL33-bY
 
-  1. bron 1
-  2. bron 2
-  3. ...
+CSS-Index:
+ Main-Hero
+-1.1 + 1.1.1 (Video hidden):De docent heeft me geholpen met het toevoegen van de Verborgen optie.
+-1.2(Clamp generator voor video ): https://clamp-generator.netlify.app/ Ik heb de klemgenerator 
+gebruikt om de video groter te maken naarmate het scherm groter wordt.
+Main-Ervaar het in Figi
+-1.1 (Image cutouts):De docent heeft me geholpen. 
+-1.2 (Filter):https://www.w3schools.com/cssref/css3_pr_filter.php Filter greyscale
+Main-Plan je verblijf
+-1.1(Animatie): Ik heb de voorbeeldcode uit de les gebruikt voor de animaties.
+ De animatie werd maar één keer afgespeeld, dus ik moest AI vragen hoe ik dit oneindig(Infinite) kon maken.
+-1.2(Brightness):Ik heb ook gezocht naar hoe ik de helderheid kon inschakelen.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/brightness
+Main-Boek een kamer button
+-1.1 Code van Codepen gebruikt:https://codepen.io/shooft/pen/vENrZvj
 
+CSS-OverFigi:
+Al meer dan 150 jaar gastvrijheid 
+-1.1(Flex direction)Ik wilde de afbeelding naar links laten komen en ik wilde geen rasters meer gebruiken. 
+Ik vroeg AI hoe ik dat het beste kon doen. En hij gaf me deze code.
+
+HTML-Index:
+-1.1(Skip Link)Ik wilde een skiplink toevoegen, ik vond een voorbeeld en een voorbeeldvideo:
+https://www.w3schools.com/accessibility/accessibility_skip_links.php
+https://www.youtube.com/shorts/a-0HnL33-bY
+-1.2(Hoe je een aria label moet toevoegen en waar): https://www.quora.com/How-do-you-add-alt-tags-to-links
+-1.3(Hulp van Ronald gekregen om de Hamburger menu te maken)
+-1.4(Video + Video Hidden): De docent heeft me geholpen met het toevoegen van de Verborgen optie.
+ De rest van de code komt uit:https://www.w3schools.com/html/html5_video.asp HTML <video> Autoplay
+-1.5(De docent raadde me aan om invoer te gebruiken om de data toe te voegen.
+ De student-assistenten vertelden me dat ik labels moest gebruiken. Ik zocht uit hoe ik dat moest doen.)
+ https://www.w3schools.com/W3CSS/w3css_input.asp
+-1.6(Boek een kamer button): Voorbeeld code van codepen: https://codepen.io/shooft/pen/vENrZvj
+
+Opmerkingen
+-1.1(Section maar geen header)Ik heb de leraar hierover gevraagd en hij zei dat het goed was, 
+omdat ik de sectie gebruik om er een raster van te maken.
+-1.2(Ul oproepen)Dit waren de beginfases van mijn codering. Ik wist niet hoe ik de UL-sectie moest aanroepen,
+ maar ik heb de sectie in CSS aangeroepen. In de onderstaande code heb ik de ul-sectie aangeroepen in plaats van de sectie.
+-1.3(Geen header na section)Ik heb een afbeelding na de sectie toegevoegd. Het zou een H3 moeten zijn. Maar de afbeelding heeft al een alt-teken,
+ zodat de schermlezer het kan lezen. Dit is ook de grid volgorde.
+
+ Javascript:
+ -1.1: Ronald heeft me geholpen met de hamburger menu, maar hij had het gedaan met document.getElementById.
+-1.2:Hier heb ik wel een class gebruikt.Voorbeeld van Codepen. Dit helpt om de sluit button aan te roepen. 
+ Ik heb ook de functie toggle gevonden door AI te vragen.Prompt:How do I turn off the kerst mode when I want to get out of it?
+ -1.3: Ik heb de code van codepen gebruikt om een hulp know te maken: https://codepen.io/shooft/pen/vENrZvj
+
+
+
+  
 </details>
