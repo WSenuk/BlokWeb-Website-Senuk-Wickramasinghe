@@ -324,8 +324,8 @@ Deze keer heb ik de test alleen gedaan. Mijn code is nog niet helemaal af en ik 
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/helepagina.jpg" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images/helepagina2.jpg" width="375px" alt="uitomst opdracht 2">
+  <img src="readme-images/helepagina.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/helepagina2.png" width="375px" alt="uitomst opdracht 2">
   
 
 
@@ -339,7 +339,7 @@ Deze keer heb ik de test alleen gedaan. Mijn code is nog niet helemaal af en ik 
   ### Dit was lastig/Is niet gelukt:
   In het begin had ik moeite met het aanroepen van de U-elementen in plaats van de secties. Omdat ik secties bovenaan had toegevoegd en daaronder een ul, kon ik de secties niet verwijderen in de CSS. Dit kwam      doordat ik de andere sectie in de CSS met nummers had aangeroepen.
 
-  <img src="readme-images/sectionaboveul.jpg" width="375px" alt="section niet voldoende">
+  <img src="readme-images/sectionaboveul.png" width="375px" alt="section niet voldoende">
 </details>
 
 
