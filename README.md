@@ -39,13 +39,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   [https://www.vanschaikzeist.nl/](https://www.figi.nl/)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  #### Van Schaik Zeist -Home
-  ##### Welkom pagina van Figt, Theater Zeist
+  #### Figi Zeist - Home
+  ##### Welkom pagina van Figi, Theater Zeist
   <img src="readme-images/figihome.png" width="375px" alt="Welkom pagina van Figt, Theater Zeist">
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  #### Van Schaik Zeist - Projecten
+  #### Figi Zeist - Over Ons 
   ##### Over Ons Pagina
   <img src="readme-images/overfigi.png" width="375px" alt="Over Ons Pagina">
 
