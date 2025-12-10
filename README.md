@@ -335,6 +335,9 @@ Deze keer heb ik de test alleen gedaan. Mijn code is nog niet helemaal af en ik 
   <img src="readme-images/javascriptkerstthema.png" width="375px" alt="Javascript Kerst Thema">
   <img src="readme-images/javascriptkerstthemabutton.png" width="375px" alt="Javascript Kerst Thema">
 
+  Ik heb ook geleerd hoe ik grids moet maken. Dat hielp me om alles makkelijk te plaatsen. Het helpt me ook om alles te positioneren en bepaalde dingen te verwisselen.
+    <img src="readme-images/week1breakdownsketchnav.png" width="375px" alt="breakdown van Nav">
+
 
   ### Dit was lastig/Is niet gelukt:
   In het begin had ik moeite met het aanroepen van de U-elementen in plaats van de secties. Omdat ik secties bovenaan had toegevoegd en daaronder een ul, kon ik de secties niet verwijderen in de CSS. Dit kwam      doordat ik de andere sectie in de CSS met nummers had aangeroepen.
