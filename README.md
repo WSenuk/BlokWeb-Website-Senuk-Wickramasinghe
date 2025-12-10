@@ -324,19 +324,22 @@ Deze keer heb ik de test alleen gedaan. Mijn code is nog niet helemaal af en ik 
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/helepagina.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/helepagina2.jpg" width="375px" alt="uitomst opdracht 2">
+  
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Wat heel goed ging, was het begrijpen van hoe JavaScript werkt. In het begin had ik er moeite mee, maar met behulp van CodePen en medestudenten begreep ik het steeds beter.
+  Ik heb dit gebruikt om een ​​kerstthema te maken.
+  <img src="readme-images/javascriptkerstthema.png" width="375px" alt="Javascript Kerst Thema">
+  <img src="readme-images/javascriptkerstthemabutton.png" width="375px" alt="Javascript Kerst Thema">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  In het begin had ik moeite met het aanroepen van de U-elementen in plaats van de secties. Omdat ik secties bovenaan had toegevoegd en daaronder een ul, kon ik de secties niet verwijderen in de CSS. Dit kwam      doordat ik de andere sectie in de CSS met nummers had aangeroepen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/sectionaboveul.jpg" width="375px" alt="section niet voldoende">
 </details>
 
 
